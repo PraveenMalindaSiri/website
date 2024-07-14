@@ -5,7 +5,7 @@ body{
 *{
     margin-left: 3px;
 }
-/*.header{
+.header{
     top: 0%;
     left: 0%;
     width: 100%;
@@ -54,7 +54,7 @@ body{
         width: 190px;
         height: 190px;
     }
-}*/
+}
 /*section styles*/
 .section_div{
     padding: 2px;
