@@ -7,24 +7,25 @@ body{
 }
 /* navbar */
 .navbar{
-    background: #0082e6;
+    background: navy;
     width: auto;
+    opacity: .86;
     box-shadow: 3px 3px 3px black;
 }
-.links{
+.nav_links{
     width: auto;
     list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.links li{
+.nav_links li{
     height: auto;
 }
 #last{
     padding-right: 50px;
 }
-.links a{
+.nav_links a{
     height: 100%;
     padding-left: 40px;
     text-decoration: none;
@@ -33,9 +34,10 @@ body{
     color: white;
     font-size: 24px;
 }
-.links a:hover{
-    color: aqua;
+.nav_links a:hover{
+    color: black;
     text-decoration: underline;
+    transition: .21s;
 }
 .logo{
     margin-right: auto;
@@ -163,7 +165,7 @@ body{
 /*Vegitable section styling*/
 .vage-sec{
     font-size: large;
-    background-color: rgb(42, 177, 132);
+    background-color: #b6b5b5;
     border-bottom: 3px solid black; 
     padding-top: 20px;
     padding-bottom: 10px;  
@@ -173,7 +175,7 @@ body{
 /*Diary section styling*/
 .diary-sec{
     font-size: large;
-    background-color: #55def0;
+    background-color: #b6b5b5;
     border-bottom: 3px solid black; 
     padding-top: 20px;
     padding-bottom: 10px;  
@@ -183,7 +185,7 @@ body{
 /*Skin section styling*/
 .skin-sec{
     font-size: large;
-    background-color: #f9bfc5;
+    background-color: #b6b5b5;
     border-bottom: 3px solid black; 
     padding-top: 20px;
     padding-bottom: 10px;  
@@ -193,7 +195,7 @@ body{
 /* baking and cooking section styling */
 .bnc-sec{
     font-size: large;
-    background-color: #d9c07f;
+    background-color: #b6b5b5;
     border-bottom: 3px solid black; 
     padding-top: 20px;
     padding-bottom: 10px;  
@@ -204,7 +206,7 @@ body{
 /* meats section styling */
 .meats-sec{
     font-size: large;
-    background-color: #c54343;
+    background-color: #b6b5b5;
     border-bottom: 3px solid black; 
     padding-top: 20px;
     padding-bottom: 10px;  
@@ -215,7 +217,7 @@ body{
 /* fruits section styling */
 .fruits-sec{
     font-size: large;
-    background-color: #FFA726;
+    background-color: #b6b5b5;
     border-bottom: 3px solid black; 
     padding-top: 20px;
     padding-bottom: 10px;  
