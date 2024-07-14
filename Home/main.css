@@ -1,0 +1,246 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Great Vibes', cursive; */
+}
+*{
+    margin-left: 3px;
+}
+/*.header{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: rgb(6, 48, 85);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.navbar a {
+    margin-left: 12px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(250, 245, 245);
+    font-weight: 400;
+    margin-left: 25px;
+}   
+.navbar a:hover{
+    color: rgb(13, 228, 228); 
+    text-shadow: 23px 7px 40px;
+    text-decoration: underline;
+}
+#icon-img{
+    background-color: white;
+    margin-top: 5px;
+}
+/*Navigation bar phone*/
+@media screen and (max-width:500px) {
+    .header{
+        border-radius: 5px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 5px;
+    }
+    .navbar a{
+        font-size: 18px;
+        padding: 5px;
+        padding-left: 10px;
+        border: 1px solid white;
+    }
+    .header img{
+        width: 190px;
+        height: 190px;
+    }
+}*/
+/*section styles*/
+.section_div{
+    padding: 2px;
+    margin: 3px;
+}
+/*Search bar styling*/
+.search-bar{
+    padding: 5%;
+    max-height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    padding: 30px;
+}
+.search-bar-form{
+    width: 100%;
+    max-width: 600px;
+    height: 40px;
+    background: rgba(14, 8, 8, 0.275);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+.search-bar-form input{
+    flex: 1;
+    background: transparent;
+    outline: none;
+    border: 0;
+    padding: 13px 25px;
+    font-size: 15px;
+}
+::placeholder{
+    color: white;
+}
+.search-bar-form button{
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+/*home intro styling*/
+.homeintrosec{
+    font-size: 23px;
+    background-image: url('Images/bg1.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    border-bottom: 3px solid black;
+    border-radius: 5px;
+    margin-bottom: 13px;   
+}
+#happy{
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    font-size: 30px;
+}
+/*Vegitable section styling*/
+.vage-sec{
+    font-size: large;
+    background-color: rgb(42, 177, 132);
+    border-bottom: 3px solid black; 
+    padding-top: 20px;
+    padding-bottom: 10px;  
+    border-radius: 5px;
+    margin-bottom: 13px;
+}
+/*Diary section styling*/
+.diary-sec{
+    font-size: large;
+    background-color: #55def0;
+    border-bottom: 3px solid black; 
+    padding-top: 20px;
+    padding-bottom: 10px;  
+    border-radius: 5px; 
+    margin-bottom: 13px;
+}
+/*Skin section styling*/
+.skin-sec{
+    font-size: large;
+    background-color: #f9bfc5;
+    border-bottom: 3px solid black; 
+    padding-top: 20px;
+    padding-bottom: 10px;  
+    border-radius: 5px; 
+    margin-bottom: 13px;
+}
+/* baking and cooking section styling */
+.bnc-sec{
+    font-size: large;
+    background-color: #d9c07f;
+    border-bottom: 3px solid black; 
+    padding-top: 20px;
+    padding-bottom: 10px;  
+    border-radius: 5px; 
+    margin-bottom: 13px;
+}
+
+/* meats section styling */
+.meats-sec{
+    font-size: large;
+    background-color: #c54343;
+    border-bottom: 3px solid black; 
+    padding-top: 20px;
+    padding-bottom: 10px;  
+    border-radius: 5px; 
+    margin-bottom: 13px;
+}
+
+/* fruits section styling */
+.fruits-sec{
+    font-size: large;
+    background-color: #FFA726;
+    border-bottom: 3px solid black; 
+    padding-top: 20px;
+    padding-bottom: 10px;  
+    border-radius: 5px; 
+    margin-bottom: 13px;
+}
+
+/*Styling the Quick links in the Home page's section*/
+.ql-home{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 5px;
+}
+.ql-home:hover{
+    color: white;
+}
+.section_div img{
+    border-radius: 23px;
+}
+.thsec-div-mobile{
+    display: none;
+}
+@media screen and (max-width:500px) {
+    .thsec-div{
+        display: none;
+    }
+    .thsec-div-mobile{
+        display: block;
+    }
+    /*Quick links mobile view*/
+    .ql-home{
+        color: white;
+    }
+}
+/*Footer stylings*/
+footer{
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-right: 5px;
+    background: linear-gradient(to right, #00093c, #2b0b00);
+    width: 100%;
+}
+.footercontainer{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: aqua;
+}
+footer h3{
+    text-decoration: underline;
+    margin-bottom: 23px;
+}
+.followus img{
+    background-color: aliceblue;
+    border-radius: 10px;
+}

@@ -1,0 +1,316 @@
+/*body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    margin-left: 5px;
+}
+.header{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: rgb(6, 48, 85);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+#icon-img{
+    background-color: white;
+    margin-top: 5px;
+}
+.navbar a {
+    margin-left: 12px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(250, 245, 245);
+    font-weight: 400;
+    margin-left: 25px;
+}   
+.navbar a:hover{
+    color: rgb(13, 228, 228); 
+    text-shadow: 23px 7px 40px;
+    text-decoration: underline;
+}*/
+/*Navigation bar phone*/
+/*@media screen and (max-width:500px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 5px;
+    }
+    .navbar a{
+        font-size: 20px;
+        padding: 5px;
+        padding-left: 30px;
+        border: 1px solid white;
+    }
+    .header img{
+        width: 200px;
+        height: 200px;
+    }
+}*/
+/*About us section styling*/
+.about-sec{
+    background-color: darkgrey;
+    margin: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 9px;
+    border-bottom-right-radius: 34px;
+}
+/*Branch sec styling*/
+.branch-sec{
+    background-color: rgb(95, 136, 232);
+    margin: 5   px;
+    padding: 19px;
+    border-bottom-right-radius: 34px;
+    
+}
+.branch-sec p{
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+}
+#para1::first-letter{
+    font-size: 150%;
+    font-weight: bold;
+}
+#table-loc{
+    width: 100%;
+}
+#table-loc img{
+    border-radius: 10px;
+}
+.branch-sec-mobile{
+    display: none;
+    background-color: rgb(95, 136, 232);
+    margin: 10px;
+    padding: 19px;
+    border-bottom-right-radius: 34px;
+}
+/*location table mobile*/
+@media screen and (max-width:500px) {
+    .branch-sec{
+        display: none;
+    }
+    .branch-sec-mobile{
+        display: block;
+    }
+    #table-loc-mobile img{
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    #table-loc-mobile iframe{
+        width: 300px;
+        height: 250px;
+    }
+    #table-loc-mobile{
+        padding: 0;
+        margin: 0;
+    }
+}
+/*Table stylings*/
+#table{
+    border-color: chartreuse;
+    border-radius: 5px;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+}
+/*Table row color(not the bg color)*/
+#table tr{
+    background-color: rgb(255, 255, 255);
+}
+.reg-intro{
+    background-color: antiquewhite;
+    margin: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 9px;
+    border-radius: 5px;
+}
+/*About us page intro table*/
+#about-intro-table{
+    width: 100%;
+}
+#about-intro-table img{
+    border-radius: 10px;
+}
+#about-intro-table-mobile{
+    display: none;
+}
+/*About us page intro img table mobile view*/
+@media screen and (max-width:500px) {
+    #about-intro-table{
+        display: none;
+    }
+    #about-intro-table-mobile{
+        display: block;
+    }
+    #about-intro-table-mobile img{
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+    }
+}
+/*Styling the registration form*/
+#form1{
+    width: 600px;
+    background-color: cadetblue;
+    font-size: 20px;
+    margin: 0 auto;
+}
+#form1 input[type="submit"], #form1 input[type="reset"]{
+    cursor: pointer;
+    padding: 10px;
+}
+#form1 input[type="submit"]:hover{
+    color: white;
+}
+#form1 input, #form1 textarea{
+    background-color: rgba(180, 240, 68, 0.692);
+    margin: 4px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid rgb(100, 26, 26);
+}
+.reg-detail{
+    background-color: rgb(68, 15, 130);
+    margin: 10px;
+    padding: 9px;
+    border-radius: 5px;
+    color: white;
+}
+#form1-mobile{
+    display: none;
+}
+/*Reg. page mobile*/
+@media screen and (max-width:500px) {
+    #form1{
+        display: none;
+    }
+    #form1-mobile{
+        display: block;
+        font-size: 20px;
+        border: 1px solid black;
+        padding: 10px;
+        background-color: #f0f0f0;
+    }
+    #form1-mobile input, #form1-mobile textarea{
+        margin: 4px;
+        border: 2px solid brown;
+        font-size: large;
+        padding: 10px;
+        border-radius: 50px;
+        width:300px;
+    }
+    #form1-mobile input[type="radio"]{
+        width: auto;
+    }
+    #form1-mobile input[type="submit"]:hover{
+        background-color: blue;
+    }
+}
+/*Styling the order form*/
+.form2{
+    width: 600px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.form2 input, .form2 textarea{
+    background-color: rgb(234, 192, 85);
+    margin: 4px;
+    padding: 14px;
+    border-radius: 20px;
+    border: 2px solid brown;
+}
+.form2 input[type="submit"], .form2 input[type="reset"]{
+    cursor: pointer;
+    padding: 10px;
+}
+.form2 input[type="submit"]:hover{
+    color: white;
+}
+.form2 fieldset{
+    border: solid 2px black;
+}
+.form2 legend{
+    font-size: larger;
+    font-style: italic;
+}
+.order-intro{
+    background-color: rgba(27, 24, 105, 0.747);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 2px solid slategray;
+    border-radius: 5px;
+    font-size: large;
+    color: white;
+}
+.form2-mobile{
+    display: none;
+}
+/*Order page mobile*/
+@media screen and (max-width:500px) {
+    .form2{
+        display: none;
+    }
+    .form2-mobile{
+        display: block;
+        font-size: 20px;
+        border: 1px solid black;
+        padding: 10px;
+        background-color: #f0f0f0;
+    }
+    .form2-mobile input, .form2-mobile textarea{
+        margin: 4px;
+        border: 2px solid brown;
+        font-size: large;
+        padding: 10px;
+        border-radius: 30px;
+        width:300px;
+    }
+    .form2-mobile input[type="radio"]{
+        width: auto;
+    }
+    .form2-mobile input[type="submit"]:hover{
+        background-color: rgb(255, 176, 7);
+    }
+}
+/*Footer stylings*/
+/*footer{
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-right: 5px;
+    background: linear-gradient(to right, #00093c, #2b0b00);
+    width: 100%;
+}
+.footercontainer{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: aqua;
+}
+footer h3{
+    text-decoration: underline;
+    margin-bottom: 23px;
+}
+.followus img{
+    background-color: aliceblue;
+    border-radius: 10px;
+}*/

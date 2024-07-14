@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+    <title>Supermarket</title>
+    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="../Home/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="refresh" content="">-->
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html"><img src="../Home/Images/supermaket.png" width="100" height="100" id="icon-img"></a>
+
+        <nav class="navbar">            
+            <a href="../index.html">Home</a>
+            <a href="../Products/Vegetable.html">Vegetables</a>
+            <a href="../Products/Milk.html">Dairy</a>
+            <a href="../Products/Skincare.html">Skin-care</a>
+            <a href="../ClientServices/order.html">Orders</a>
+            <a href="../ClientServices/register.html">Register</a>
+            <a href="../ClientServices/about.html">About</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <section class="order-intro">
+                <h1>Orders</h1>
+                <p>Welcome to Grocies Supermarket's easy-to-use order page! 
+                    Browse our wide range of products with simple categories or use our 
+                    search bar to find what you need in no time. Just click to add items to 
+                    your cart, review your selections, and proceed to checkout for a hassle-free 
+                    experience. With secure payment options and flexible shipping, ordering groceries 
+                    online has never been simpler. Try it now and see for yourself!
+                </p>
+            </section>
+            <section>
+                <!-- order page form -->
+                <form class="form2">
+                    <fieldset>
+                        <fieldset>
+                            <h2>Products Selection</h2>
+                            Catagory:<select name="categories" required>
+                                <option>Vagetables</option>
+                                <option>Diary Products</option>
+                                <option>Skin care Products</option>
+                            </select><br><br>
+                            Products:<textarea name="products" rows="15" cols="40">Enter your product's name and the amount in grams or pieces</textarea>
+                        </fieldset>
+                        <fieldset>
+                            <h2>Details and Payment method</h2>
+                            <table>
+                                <tr>
+                                    <td>Shopper Name:</td>
+                                    <td><input type="text" maxlength="30" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Address:</td>
+                                    <td><textarea rows="5" cols="25" required>Type your address</textarea><br><br></td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile:</td>
+                                    <td><input type="text" required maxlength="10"></td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td><input type="email"></td>
+                                </tr>
+                                <tr>
+                                    <td>Payment Method:</td><br>
+                                    <td>Visa<input type="radio"> Credit<input type="radio"> Debit<input type="radio"></td>
+                                </tr>
+                                <tr>
+                                    <td>Card Number:</td>
+                                    <td><input type="text" maxlength="16" required placeholder="xxxx xxxx xxxx xxxx"></td>
+                                </tr>
+                                <tr>
+                                    <td>Expire Date:</td>
+                                    <td><input type="date" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Security Code:</td>
+                                    <td><input type="text" required> </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <input type="submit" value="Confirm the order">
+                        <input type="reset" value="Refill">
+                        </fieldset>
+                    </fieldset>
+                </form>
+            </section>
+            <section>
+                <!-- order page form mobile -->
+                <form class="form2-mobile">
+                    <h3 >Products Selection</h3>
+                    Catagory:<select name="categories" required>
+                        <option>Vagetables</option>
+                        <option>Diary Products</option>
+                        <option>Skin care Products</option>
+                    </select><br><br>
+                    Products: <br>
+                    <textarea name="products" rows="5" cols="25">Enter your product's name and the amount in grams or pieces</textarea>
+                    <h3>Details and Payment method</h3>
+                    Shopper Name: <br>
+                    <input type="text" maxlength="30" required><br><br>
+                    Address: <br>
+                    <textarea rows="5" cols="25" required>Type your address</textarea><br><br>
+                    Mobile: <br>
+                    <input type="text" required maxlength="10"> <br><br>
+                    Email: <br>
+                    <input type="email"><br><br>
+                    Payment Method:<br><br> 
+                    Visa<input type="radio">
+                    Credit<input type="radio">
+                    Debit<input type="radio"><br><br>
+                    Card Number: <br>
+                    <input type="text" maxlength="16" required placeholder="xxxx xxxx xxxx xxxx"><br><br>
+                    Expire Date: <br>
+                    <input type="date" required><br><br>
+                    Security Code: <br>
+                    <input type="text" required><br><br>
+                    <input type="submit" value="Confirm the order">
+                    <input type="reset" value="Refill">
+                </form>
+            </section>
+        </div>
+    </main><br>
+    <!-- footer -->
+    <footer class="footer">
+        <!-- Social media icons: Flaticon (2010). Flaticon, The Largest Database of Free Vector Icons. [online] Flaticon. Available at: https://www.flaticon.com/. -->
+        <!-- Logo: Flaticon. (n.d.). 66,528 Free icons of search. [online] Available at: https://www.flaticon.com/free-icons/search. -->
+
+        <div class="footercontainer">
+            <div>
+                <section>
+                    <h2>Grocies</h2>
+                    <p>Welcome dear customer. From quality products to fast shipping and top-notch 
+                    customer support, we've got you covered. Explore our exclusive deals and shop with confidence 
+                    knowing your satisfaction is our priority. Thanks for trusting us and happy shopping!
+                    </p>
+                </section>
+            </div>
+            <div class="services">
+                <section>
+                    <h3>Contact Us</h3>
+                    <h4>Phone numbers/Emails</h4>
+                    <ol>
+                        <li>+94 123456798</li>
+                        <li>0374322345</li>
+                        <li>groceries_1@gmail.com</li>
+                        <li>groceries_2@outlook.com</li>
+                    </ol>
+                </section>
+            </div>
+            <div class="links">
+                <section>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="order.html">Order</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="followus">
+                <section>
+                    <h3>Follow us</h3>
+                    <a href="https://www.facebook.com" target="_blank"><img src="../Home/Images/facebook.png" alt="Facebook" width="30px"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../Home/Images/instagram.png" alt="Instagram" width="30px"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="../Home/Images/linkedin.png" alt="linkedin" width="30px"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="../Home/Images/twitter.png" alt="X" width="30px"></a>
+                </section>
+            </div>
+        
+        
+        
+        
+        
+        </div>
+        <div>
+            <p align="center">2024 &copy; All right reserved </p>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>

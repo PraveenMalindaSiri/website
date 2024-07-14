@@ -1,0 +1,449 @@
+/*body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    margin-left: 5px;
+}
+.header{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: rgb(6, 48, 85);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+#icon-img{
+    background-color: white;
+    margin-top: 5px;
+}
+.navbar a {
+    margin-left: 12px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(250, 245, 245);
+    font-weight: 400;
+    margin-left: 25px;
+}   
+.navbar a:hover{
+    color: rgb(13, 228, 228); 
+    text-shadow: 23px 7px 40px;
+    text-decoration: underline;
+}*/
+/*Navigation bar phone*/
+/*@media screen and (max-width:500px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 5px;
+    }
+    .navbar a{
+        font-size: 20px;
+        padding: 5px;
+        padding-left: 30px;
+        border: 1px solid white;
+    }
+    .header img{
+        width: 200px;
+        height: 200px;
+    }
+}*/
+/*Search bar styling*/
+/*.search-bar{
+    padding: 5%;
+    max-height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    padding: 30px;
+}
+.search-bar-form{
+    width: 100%;
+    max-width: 600px;
+    height: 40px;
+    background: rgba(14, 8, 8, 0.275);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+.search-bar-form input{
+    flex: 1;
+    background: transparent;
+    outline: none;
+    border: 0;
+    padding: 13px 25px;
+    font-size: 15px;
+}
+::placeholder{
+    color: white;
+}
+.search-bar-form button{
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}*/
+/*Diary section styling*/
+.diary-intro{
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    background-color: #E0F7FA;
+    border-radius: 10px;
+    font-size: large;
+}
+/*Diary container styles*/
+.container1{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    /* background-color: #FFF9E6; */
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+    font-size: large;
+}
+/*Diary items styling*/
+.container1 section{
+    border: 1px solid rgb(22, 23, 126);
+    border-radius: 5px;
+    padding: 10px;
+    width: 180px;
+    box-shadow: 2px 3px black;
+    transition: all 1s;
+}
+/*Order link styles*/
+.container1 section a{
+    display: flex;
+    background-color: #2acee3;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    float: bottom;
+}
+.container1 section a:hover{
+    color: blue;
+}
+#milk-sec:hover{
+    box-shadow: 4px 3px #B2EBF2;
+}
+/*Diary page mobile*/
+@media screen and (max-width:400px) {
+    .container1 section{
+        width: 120px;
+        height: auto;
+    }
+    .container1{
+        gap: 10px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:500px) {
+    .container1 section{
+        width: 155px;
+        height: auto;
+    }
+    .container1{
+        gap: 5px;
+        padding: 5px;
+    }
+}
+/*Skin sec styles*/
+.skin-intro{
+    background-color: bisque;
+    border-radius: 12px;
+    font-size: large;
+    padding: 5px;
+    margin: 3px;
+}
+#skin-sec{
+    padding: 5px;
+    margin: 9px;
+}
+/*Skin table styles*/
+#skin-table{
+    border-color: brown;
+    border-radius: 10px;
+    font-size: large;
+    width: 1000px;
+    text-align:center;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+}
+/*skin table link styles*/
+#skin-table tr a{
+    display: flex;
+    background-color: rgb(202, 28, 28);
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: center;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    color: white;
+    margin-bottom: 5px;
+}
+#skin-table tr a:hover{
+    color: white;
+    background-color: blue;
+}
+/*skin care table mobile*/
+@media screen and (max-width:500px) {
+    #skin-table{
+        width: 100%;
+    }
+}
+/*Vegetable sec styling*/
+.vage-intro{
+    padding: 5px;
+    margin: 9px;
+    background-color: rgb(14, 146, 102);
+    border-radius: 10px;
+    font-size: large;
+}
+/*Vege container styling*/
+.container2{
+    display: grid;
+    background-color: rgb(250, 250, 250);
+    /* background-color: #E0F2E9; */
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 10px;
+    font-size: large;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(5,170px);
+    grid-template-rows: repeat(8, auto) ;
+    row-gap: 30px;
+}
+.container2 section{
+    border: 2px solid rgb(22, 23, 126);
+    border-radius: 5px;
+    padding: 10px;
+    width: 170px;
+    box-shadow: 2px 3px rgb(14, 146, 102);
+    transition: all 1s;
+}
+.container2 section:hover{
+    box-shadow: 4px 3px black;
+}
+.container2 section a{
+    display: flex;
+    background-color: rgb(14, 146, 102);
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+}
+.container2 section a:hover{
+    color: blue;
+}
+/*Alinging the images*/
+.container1 section img, .container2 section img{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    border-radius: 25px;
+    border: solid black
+}
+/*Vegetable page mobile*/
+@media screen and (max-width:500px) {
+    .vage-intro{
+        margin: 1px;
+        margin-bottom: 10px;
+    }
+    .container2{
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(40,250px);
+    }
+}
+/*Footer stylings*/
+/*footer{
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-right: 5px;
+    background: linear-gradient(to right, #00093c, #2b0b00);
+    width: 100%;
+}
+.footercontainer{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: aqua;
+}
+footer h3{
+    text-decoration: underline;
+    margin-bottom: 23px;
+}
+.followus img{
+    background-color: aliceblue;
+    border-radius: 10px;
+}*/
+
+/*Meats sec styling*/
+.meats-intro{
+    padding: 5px;
+    margin: 9px;
+    background-color: #acaaaa;
+    border-radius: 10px;
+    font-size: large;
+}
+/*Meats container styling*/
+.container3{
+    display: grid;
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 10px;
+    font-size: large;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(5,170px);
+    grid-template-rows: repeat(2, auto) ;
+    row-gap: 30px;
+    margin-bottom: 10px;
+}
+.container3 section{
+    border: 2px solid rgb(22, 23, 126);
+    border-radius: 5px;
+    padding: 10px;
+    width: 170px;
+    box-shadow: 2px 3px black;
+    transition: all 1s;
+}
+.container3 section:hover{
+    box-shadow: 4px 3px #D32F2F;
+}
+.container3 section a{
+    display: flex;
+    background-color: #B71C1C;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+}
+.container3 section a:hover{
+    color: blue;
+}
+/*Alinging the images*/
+.container3 section img, .container4 section img, .container5 section img{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    border-radius: 25px;
+    border: solid black
+}
+/*Fruits sec styling*/
+.fruits-intro{
+    padding: 5px;
+    margin: 9px;
+    background-color: #FFF8E1;
+    border-radius: 10px;
+    font-size: large;
+}
+/*Fruits container styling*/
+.container4{
+    display: grid;
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 10px;
+    font-size: large;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(5,170px);
+    grid-template-rows: repeat(2, auto) ;
+    row-gap: 30px;
+    margin-bottom: 10px;
+}
+.container4 section{
+    border: 2px solid rgb(22, 23, 126);
+    border-radius: 5px;
+    padding: 10px;
+    width: 170px;
+    box-shadow: 2px 3px rgb(41, 41, 41);
+    transition: all 1s;
+}
+.container4 section:hover{
+    box-shadow: 4px 3px #FFEB3B;
+}
+.container4 section a{
+    display: flex;
+    background-color: #f5e020;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+}
+.container4 section a:hover{
+    color: blue;
+}
+
+/*Baking and cooking ing. sec styling*/
+.bac-intro{
+    padding: 5px;
+    margin: 9px;
+    background-color: #F5E8C7;
+    border-radius: 10px;
+    font-size: large;
+}
+/*Baking and cooking ing. container styling*/
+.container5{
+    display: grid;
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 10px;
+    font-size: large;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(5,170px);
+    grid-template-rows: repeat(2, auto) ;
+    row-gap: 30px;
+    margin-bottom: 10px;
+}
+.container5 section{
+    border: 2px solid rgb(22, 23, 126);
+    border-radius: 5px;
+    padding: 10px;
+    width: 170px;
+    box-shadow: 2px 3px black;
+    transition: all 1s;
+}
+.container5 section:hover{
+    box-shadow: 4px 3px #FFB300;
+}
+.container5 section a{
+    display: flex;
+    background-color: #FFB300;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+}
+.container5 section a:hover{
+    color: blue;
+}

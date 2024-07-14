@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<head>
+    <title>Supermarket</title>
+    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="../Home/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="refresh" content="">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html"><img src="../Home/Images/supermaket.png" width="100" height="100" id="icon-img"></a>
+
+        <nav class="navbar">            
+            <a href="../index.html">Home</a>
+            <a href="../Products/Vegetable.html">Vegetables</a>
+            <a href="../Products/Milk.html">Dairy</a>
+            <a href="../Products/Skincare.html">Skin-care</a>
+            <a href="../ClientServices/order.html">Orders</a>
+            <a href="../ClientServices/register.html">Register</a>
+            <a href="../ClientServices/about.html">About</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <section class="reg-intro">
+                <p>Welcome to Grocies Supermarket's registration page - your gateway to unlocking a world of 
+                    convenience and exclusive benefits! Signing up is quick, easy, and completely free. By 
+                    creating an account, you'll gain access to a host of features, including personalized 
+                    recommendations, faster checkout, and exclusive discounts and promotions. Whether you're 
+                    a seasoned shopper or new to the Grocies family, registering with us is the first step 
+                    towards enjoying a seamless and rewarding shopping experience. Join our community today 
+                    and discover the countless perks that await you!
+                </p>
+            </section>
+            <section>
+                <!-- reg. page form -->
+                <form id="form1">
+                    <fieldset>
+                        <h3>Registration Form</h3>
+                        <fieldset>
+                            <h4>User Info.</h4>
+                            <table>
+                                <tr>
+                                    <td>First Name:</td>
+                                    <td><input type="text" maxlength="20" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Last Name:</td>
+                                    <td><input type="text" maxlength="20"></td>
+                                </tr>
+                                <tr>
+                                    <td>Date Of Birthday:</td>
+                                    <td><input type="date" required></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <fieldset>
+                            <h4>Contact Info.</h4>
+                            <table>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td><input type="email" maxlength="30" required placeholder="example@mail.com"></td>
+                                </tr>
+                                <tr>
+                                    <td>Password:</td>
+                                    <td><input type="password" required minlength="8" placeholder="Password for you to log-in"></td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile Number:</td>
+                                    <td><input type="text" maxlength="10" required placeholder="0123456789"></td>
+                                </tr>
+                                <tr>
+                                    <td>Telephone Number:</td>
+                                    <td><input type="text" maxlength="10"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <fieldset>
+                            <h4>Loyalty Schemes</h4>
+                            Passes:<select name="schemes" required>
+                                <option>Gold Pass</option>
+                                <option>Elite Pass</option>
+                                <option>Unreal Pass</option>
+                            </select><br><br>
+                            Payment Method: Visa<input type="radio"> Credit<input type="radio"> Debit<input type="radio"><br><br>
+                            <table>
+                                <tr>
+                                    <td>Card Number:</td>
+                                    <td><input type="text" maxlength="16" required placeholder="xxxx xxxx xxxx xxxx"></td>
+                                </tr>
+                                <tr>
+                                    <td>Expire Date:</td>
+                                    <td><input type="date" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Security Code:</td>
+                                    <td><input type="text" required placeholder="xxx"> </td>
+                                </tr>
+                            </table>   
+                        </fieldset>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear">
+                    </fieldset>
+                </form>
+            </section>
+            <!-- registration form mobile -->
+            <section>
+                <form id="form1-mobile">
+                    <h3>Registration Form</h3>
+                    <h4>User Info.</h4>
+                    First Name: <br>
+                    <input type="text" maxlength="20" required><br><br>
+                    Last Name: <br>
+                    <input type="text" maxlength="20"><br><br>
+                    Date Of Birthday: <br>
+                    <input type="date" required><br><br>
+                    <h4>Contact Info.</h4>
+                    Email: <br>
+                    <input type="email" maxlength="30" required placeholder="example@mail.com"><br><br>
+                    Password: <br>
+                    <input type="password" required minlength="8" placeholder="Password for you to log-in"><br><br>
+                    Mobile Number: <br>
+                    <input type="text" maxlength="10" required placeholder="0123456789"><br><br>
+                    Telephone Number: <br>
+                    <input type="text" maxlength="10"><br><br>
+                    <h4>Loyalty Schemes</h4>
+                    Passes:<select name="schemes" required>
+                        <option>Gold Pass</option>
+                        <option>Elite Pass</option>
+                        <option>Unreal Pass</option>
+                    </select><br><br>
+                    Payment Method:<br><br> 
+                    Visa<input type="radio">
+                    Credit<input type="radio">
+                    Debit<input type="radio"><br><br>
+                    Card Number: <br>
+                    <input type="text" maxlength="16" required placeholder="xxxx xxxx xxxx xxxx"><br><br>
+                    Expire Date: <br>
+                    <input type="date" required><br><br>
+                    Security Code: <br>
+                    <input type="text" required><br><br>
+                    
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear">
+
+                </form>
+            </section>
+            <!-- loyalty passes -->
+            <section class="reg-detail">
+                <h2>Details of our Loyalty Passes</h2>
+                <p>We have 3 passes for you. They are,
+                    <ol>
+                        <li>Gold Pass</li>
+                        <li>Elite Pass</li>
+                        <li>Unreal Pass</li>
+                    </ol>
+                    Each pass has their own specialities. 
+                    <h3>Gold Pass Details</h3>
+                    <ul>
+                        <li>Exclusive Discounts: Special discounts on selected products or categories.</li>
+                        <li>Early Access: Get first dibs on new arrivals and limited edition items.</li>
+                        <li>Personalized Recommendations: Tailored product recommendations based on your preferences.</li>
+                    </ul>
+                    <h3>Elite Pass Details</h3>
+                    <ul>
+                        <li>Complimentary Services: Free or discounted services such as home delivery or personal shopping assistance.</li>
+                        <li>Additional Discounts: Exclusive discounts on a wider range of products or services.</li>
+                        <li>Insider Updates: Regular updates on upcoming promotions, events, and new product launches.</li>
+                    </ul>
+                    <h3>Unreal Pass Details</h3>
+                    <ul>
+                        <li>All Platinum and Gold Pass benefits.</li>
+                        <li>Priority Access: Guaranteed access to limited edition items or high-demand products.</li>
+                        <li>Exclusive Events: Invitations to VIP-only events, such as private tastings, product launches, or meet-and-greets with suppliers.</li>
+                        <li>Premium gift Wrap: Complimentary gift wrapping services for all your purchases, perfect for special occasions or gifts for loved ones.</li>
+                        <li>Personal Shopper: Personal shopper to assist you to find the best product you want.</li>
+                    </ul>
+                </p>
+            </section>
+    
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <!-- Social media icons: Flaticon (2010). Flaticon, The Largest Database of Free Vector Icons. [online] Flaticon. Available at: https://www.flaticon.com/. -->
+        <!-- Logo: Flaticon. (n.d.). 66,528 Free icons of search. [online] Available at: https://www.flaticon.com/free-icons/search. -->
+
+        <div class="footercontainer">
+            <div>
+                <section>
+                    <h2>Grocies</h2>
+                    <p>Welcome dear customer. From quality products to fast shipping and top-notch 
+                    customer support, we've got you covered. Explore our exclusive deals and shop with confidence 
+                    knowing your satisfaction is our priority. Thanks for trusting us and happy shopping!
+                    </p>
+                </section>
+            </div>
+            <div class="services">
+                <section>
+                    <h3>Contact Us</h3>
+                    <h4>Phone numbers/Emails</h4>
+                    <ol>
+                        <li>+94 123456798</li>
+                        <li>0374322345</li>
+                        <li>groceries_1@gmail.com</li>
+                        <li>groceries_2@outlook.com</li>
+                    </ol>
+                </section>
+            </div>
+            <div class="links">
+                <section>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="order.html">Order</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="followus">
+                <section>
+                    <h3>Follow us</h3>
+                    <a href="https://www.facebook.com" target="_blank"><img src="../Home/Images/facebook.png" alt="Facebook" width="30px"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../Home/Images/instagram.png" alt="Instagram" width="30px"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="../Home/Images/linkedin.png" alt="linkedin" width="30px"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="../Home/Images/twitter.png" alt="X" width="30px"></a>
+                </section>
+            </div>
+        
+        
+        
+        
+        
+        </div>
+        <div>
+            <p align="center">2024 &copy; All right reserved </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
