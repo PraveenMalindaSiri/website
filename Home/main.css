@@ -38,6 +38,7 @@ body{
     color: black;
     text-decoration: underline;
     transition: .21s;
+    text-shadow: 1px 1px 9px #FFF8E1;
 }
 .logo{
     margin-right: auto;
@@ -289,4 +290,32 @@ footer h3{
 .followus img{
     background-color: aliceblue;
     border-radius: 10px;
+}
+/* scroll up */
+#scroll{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    padding: 7px;
+    background-color: rgb(110, 110, 110);
+    text-decoration: none;
+    transition: opacity 0.3s;
+    opacity: 0.8;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 20px;
+}
+#scroll:hover{
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+}
+#scroll img{
+    transition: transform 0.5s ease-in-out;   
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#scroll img:hover{
+    transform: rotate(360deg);
 }
