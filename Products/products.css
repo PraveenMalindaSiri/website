@@ -114,9 +114,10 @@
     transition: .4s;
     text-shadow: 1px 1px 9px #FFF8E1;
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:500px){
     .mini_navbar{
         flex-direction: column;
+        flex-wrap: wrap;
         text-align: center;
     }
 }
