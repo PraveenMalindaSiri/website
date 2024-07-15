@@ -1,26 +1,42 @@
 <!DOCTYPE html>
-<head>
-    <title>Supermarket</title>
-    <link rel="stylesheet" href="products.css">
-    <link rel="stylesheet" href="../Home/main.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <!--<meta http-equiv="refresh" content="">-->
-</head>
+<html lang="en">
+    <head>
+        <title>Supermarket</title>
+        <link rel="stylesheet" href="products.css">
+        <link rel="stylesheet" href="../Home/main.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <!--<meta http-equiv="refresh" content="">-->
+    </head>
 <body>
-    <header class="header">
-        <a href="../index.html"><img src="../Home/Images/supermaket.png" width="100" height="100" id="icon-img"></a>
+    <nav class="navbar">
+        <ul class="sidebar">
+            <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="../Products/products.html">Products</a></li>
+            <li><a href="../ClientServices/order.html">Orders</a></li>
+            <li><a href="../ClientServices/register.html">Register</a></li>
+            <li><a href="../ClientServices/about.html">About</a></li>
+        </ul>
+        <ul class="nav_links">
+            <li class="logo"><a href="../index.html"><img src="../Home/Images/supermaket.png" width="100" height="100" id="icon-img"></a></li>
+            <li class="mobile_hide"><a href="../index.html">Home</a></li>
+            <li class="mobile_hide"><a href="../Products/products.html">Products</a></li>
+            <li class="mobile_hide"><a href="../ClientServices/order.html">Orders</a></li>
+            <li class="mobile_hide"><a href="../ClientServices/register.html">Register</a></li>
+            <li class="mobile_hide"><a href="../ClientServices/about.html" id="last">About</a></li>
+            <li class="menu_btn" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <div class="mini_navbar">
+        <a href="./Vegetable.html">Vegetables</a>
+        <a href="./Milk.html">Dairy</a>
+        <a href="./baking.html">Baking and Cooking Ingredients</a>
+        <a href="./meats.html">Meats</a>
+        <a href="./fruits.html">Fruits</a>
+        <a href="./Skincare.html">Skin-Care</a>
+    </div>
 
-        <nav class="navbar">            
-            <a href="../index.html">Home</a>
-            <a href="../Products/Vegetable.html">Vegetables</a>
-            <a href="../Products/Milk.html">Dairy</a>
-            <a href="../Products/Skincare.html">Skin-care</a>
-            <a href="../ClientServices/order.html">Orders</a>
-            <a href="../ClientServices/register.html">Register</a>
-            <a href="../ClientServices/about.html">About</a>
-        </nav>
-    </header>
     <main>
         <!--Search bar-->
         <div class="search-bar">
@@ -75,12 +91,6 @@
             </section>
         </div>
         <div class="container2">
-    
-            <section id="vage1">
-                <img src="../Products/Vagetables/Ash Plantains.webp" alt="Ash Plantains" width="120" height="120">
-                <p>Ash Plantains 100g - Rs.100/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
             <section id="vage2">
                 <img src="../Products/Vagetables/Beetroot.webp" alt="Beetroot" width="120" height="120">
                 <p>Beetroot 300g - Rs.100/=</p>
@@ -94,11 +104,6 @@
             <section id="vage4">
                 <img src="../Products/Vagetables/Bell Pepper Red.webp" alt="Bell Pepper Red" width="120" height="120">
                 <p>Bell Pepper Red 100g - Rs.95/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
-            <section id="vage5">
-                <img src="../Products/Vagetables/Bell Pepper Yellow.webp" alt="Bell Pepper Yellow" width="120" height="120">
-                <p>Bell Pepper Yellow 100g - Rs.95/=</p>
                 <a href="../ClientServices/order.html">Order</a>
             </section>
     
@@ -148,27 +153,7 @@
                 <p>Coconut 1 unit - Rs.110</p>
                 <a href="../ClientServices/order.html">Order</a>
             </section>
-            <section id="vage15">
-                <img src="../Products/Vagetables/Coriander Leaves.webp" alt="Coriander Leaves" width="120" height="120">
-                <p>Coriander Leaves 100g - Rs.38/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
     
-            <section id="vage16">
-                <img src="../Products/Vagetables/Cucumber.webp" alt="Cucumber" width="120" height="120">
-                <p>Cucumber 300g - Rs.35/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
-            <section id="vage17">
-                <img src="../Products/Vagetables/Dambala.webp" alt="Dambala" width="120" height="120">
-                <p>Dambala 100g - Rs.50/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
-            <section id="vage18">
-                <img src="../Products/Vagetables/Garlic.webp" alt="Garlic" width="120" height="120">
-                <p>Garlic 600g - Rs.290/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
             <section id="vage19">
                 <img src="../Products/Vagetables/Gotukola.webp" alt="Gotukola" width="120" height="120">
                 <p>Gotukola 1 unit - Rs.85/=</p>
@@ -190,11 +175,6 @@
                 <p>Tomatoes 100g - Rs.70/=</p>
                 <a href="../ClientServices/order.html">Order</a>
             </section>
-            <section id="vage23">
-                <img src="../Products/Vagetables/Kankun.webp" alt="Kankun" width="120" height="120">
-                <p>Kankun 1 unit - Rs.85/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
             <section id="vage24">
                 <img src="../Products/Vagetables/Karapincha.webp" alt="Karapincha" width="120" height="120">
                 <p>Karapincha 1 unit - Rs.25/=</p>
@@ -206,11 +186,6 @@
                 <a href="../ClientServices/order.html">Order</a>
             </section>
     
-            <section id="vage26">
-                <img src="../Products/Vagetables/Knol Khol.webp" alt="Knol Khol" width="120" height="120">
-                <p>Knol Khol 100g - Rs.20/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
             <section id="vage27">
                 <img src="../Products/Vagetables/Kohila.webp" alt="Kohila" width="120" height="120">
                 <p>Kohila 100g - Rs.22/=</p>
@@ -237,16 +212,6 @@
                 <p>Long Beans 300g - Rs.70/=</p>
                 <a href="../ClientServices/order.html">Order</a>
             </section>
-            <section id="vage32">
-                <img src="../Products/Vagetables/Minchi Leaves.webp" alt="Minchi Leaves" width="120" height="120">
-                <p>Minchi Leaves 100g - Rs.80/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
-            <section id="vage33">
-                <img src="../Products/Vagetables/Mukunuwenna.webp" alt="Mukunuwenna" width="120" height="120">
-                <p>Mukunuwenna 1 unit - Rs.85/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
             <section id="vage34">
                 <img src="../Products/Vagetables/Plantain Flower.webp" alt="Plantain Flower" width="120" height="120">
                 <p>Plantain Flower 300g - Rs.50/=</p>
@@ -255,32 +220,6 @@
             <section id="vage35">
                 <img src="../Products/Vagetables/Potatoes.webp" alt="Potatoes" width="120" height="120">
                 <p>Potatoes 300g - Rs.110/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
-    
-            <section id="vage36">
-                <img src="../Products/Vagetables/Pumpkin.webp" alt="Pumpkin" width="120" height="120">
-                <p>Pumpkin 300g - Rs.70/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
-            <section id="vage37">
-                <img src="../Products/Vagetables/Raddish.webp" alt="Raddish" width="120" height="120">
-                <p>Raddish 300g - Rs.50/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
-            <section id="vage38">
-                <img src="../Products/Vagetables/Salad Leaves.webp" alt="Salad Leaves" width="120" height="120">
-                <p>Salad Leaves 300g - Rs.70/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
-            <section id="vage39">
-                <img src="../Products/Vagetables/Snake Gourd.webp" alt="Snake Gourd" width="120" height="120">
-                <p>Snake Gourd 300g - Rs.70/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
-            <section id="vage40">
-                <img src="../Products/Vagetables/zucchini.webp" alt="zucchini" width="120" height="120">
-                <p>zucchini 300g - Rs.200/=</p>
                 <a href="../ClientServices/order.html">Order</a>
             </section>
     

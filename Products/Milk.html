@@ -1,26 +1,42 @@
 <!DOCTYPE html>
-<head>
-    <title>Supermarket</title>
-    <link rel="stylesheet" href="products.css">
-    <link rel="stylesheet" href="../Home/main.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<meta http-equiv="refresh" content="">-->
-</head>
+<html lang="en">
+    <head>
+        <title>Supermarket</title>
+        <link rel="stylesheet" href="products.css">
+        <link rel="stylesheet" href="../Home/main.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <!--<meta http-equiv="refresh" content="">-->
+    </head>
 <body>
-    <header class="header">
-        <a href="../index.html"><img src="../Home/Images/supermaket.png" width="100" height="100" id="icon-img"></a>
+    <nav class="navbar">
+        <ul class="sidebar">
+            <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="../Products/products.html">Products</a></li>
+            <li><a href="../ClientServices/order.html">Orders</a></li>
+            <li><a href="../ClientServices/register.html">Register</a></li>
+            <li><a href="../ClientServices/about.html">About</a></li>
+        </ul>
+        <ul class="nav_links">
+            <li class="logo"><a href="../index.html"><img src="../Home/Images/supermaket.png" width="100" height="100" id="icon-img"></a></li>
+            <li class="mobile_hide"><a href="../index.html">Home</a></li>
+            <li class="mobile_hide"><a href="../Products/products.html">Products</a></li>
+            <li class="mobile_hide"><a href="../ClientServices/order.html">Orders</a></li>
+            <li class="mobile_hide"><a href="../ClientServices/register.html">Register</a></li>
+            <li class="mobile_hide"><a href="../ClientServices/about.html" id="last">About</a></li>
+            <li class="menu_btn" onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <div class="mini_navbar">
+        <a href="./Vegetable.html">Vegetables</a>
+        <a href="./Milk.html">Dairy</a>
+        <a href="./baking.html">Baking and Cooking Ingredients</a>
+        <a href="./meats.html">Meats</a>
+        <a href="./fruits.html">Fruits</a>
+        <a href="./Skincare.html">Skin-Care</a>
+    </div>
 
-        <nav class="navbar">            
-            <a href="../index.html">Home</a>
-            <a href="../Products/Vegetable.html">Vegetables</a>
-            <a href="../Products/Milk.html">Dairy</a>
-            <a href="../Products/Skincare.html">Skin-care</a>
-            <a href="../ClientServices/order.html">Orders</a>
-            <a href="../ClientServices/register.html">Register</a>
-            <a href="../ClientServices/about.html">About</a>
-        </nav>
-    </header>
     <main>
         <!--Search bar-->
         <div class="search-bar">
@@ -49,11 +65,6 @@
                 <a href="../ClientServices/order.html">Order</a>
             </section>
             <section id="milk-sec">
-                <img src="../Products/Milk products/Astra Fat Spread.webp" alt="Astra Fat Spread" width="120" height="120">
-                <p>Astra Fat Spread One unit - Rs.950/=</p><br>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
-            <section id="milk-sec">
                 <img src="../Products/Milk products/Castello Cheese.webp" alt="Castello Cheese" width="120" height="120">
                 <p>Castello Cheese one unit - Rs.1690/=</p><br>
                 <a href="../ClientServices/order.html">Order</a>
@@ -62,20 +73,10 @@
                 <img src="../Products/Milk products/Highland Set Yoghurt.webp" alt="Highland Set Yoghurt" width="120" height="120">
                 <p>Highland Set Yoghurt one unit - Rs.80/=</p><br>
                 <a href="../ClientServices/order.html">Order</a>
-            </section>
-            <section id="milk-sec">
-                <img src="../Products/Milk products/Kotmale Cheese Wedges Pepper.webp" alt="Kotmale Cheese Wedges Pepper" width="120" height="120">
-                <p>Kotmale Cheese Wedges Pepper one unit - Rs.580/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
+            </section>  
             <section id="milk-sec">
                 <img src="../Products/Milk products/Kotmale Cheese Wedges.webp" alt="Kotmale Cheese Wedges" width="120" height="120">
                 <p>Kotmale Cheese Wedges one unit - Rs.560/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
-            <section id="milk-sec">
-                <img src="../Products/Milk products/Kotmale Drinking Yoghurt Vanilla.webp" alt="Kotmale Drinking Yoghurt Vanilla" width="120" height="120">
-                <p>Kotmale Drinking Yoghurt Vanilla one unit - Rs.160/=</p>
                 <a href="../ClientServices/order.html">Order</a>
             </section>
             <section id="milk-sec">
@@ -116,11 +117,6 @@
             <section id="milk-sec">
                 <img src="../Products/Milk products/Richlife Butter Salted 200G.webp" alt="Richlife Butter Salted 200G" width="120" height="120">
                 <p>Richlife Butter Salted 200G one unit - Rs.910/=</p>
-                <a href="../ClientServices/order.html">Order</a>
-            </section>
-            <section id="milk-sec">
-                <img src="../Products/Milk products/Richlife Feta Cheese.webp" alt="Richlife Feta Cheese" width="120" height="120">
-                <p>Richlife Feta Cheese one unit - Rs.570/=</p><br>
                 <a href="../ClientServices/order.html">Order</a>
             </section>
         </div>    

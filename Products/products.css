@@ -88,6 +88,32 @@
     background: transparent;
     cursor: pointer;
 }*/
+
+/* mini navbar */
+.mini_navbar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: gray;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+.mini_navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    padding: 20px;
+    /* background-color: #2acee3; */
+}
+.mini_navbar a:hover{
+    color: black;
+    transition: .4s;
+    text-shadow: 1px 1px 9px #FFF8E1;
+}
+
 /*Diary section styling*/
 .diary-intro{
     padding: 5px;
@@ -223,7 +249,7 @@
     font-size: large;
     justify-content: space-evenly;
     grid-template-columns: repeat(5,170px);
-    grid-template-rows: repeat(8, auto) ;
+    grid-template-rows: repeat(5, auto) ;
     row-gap: 30px;
 }
 .container2 section{
