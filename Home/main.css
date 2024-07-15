@@ -51,7 +51,7 @@ body{
     height: auto;
     width: 250px;
     z-index: 999;
-    background-color: #0082e6;
+    background-color: gray;
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px black;
     display: none;
