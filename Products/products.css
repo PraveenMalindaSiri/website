@@ -113,7 +113,12 @@
     transition: .4s;
     text-shadow: 1px 1px 9px #FFF8E1;
 }
-
+@media screen and (max-width:400px){
+    .mini_navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+}
 /*Diary section styling*/
 .diary-intro{
     padding: 5px;
@@ -291,7 +296,7 @@
     }
     .container2{
         grid-template-columns: repeat(1,auto);
-        grid-template-rows: repeat(40,250px);
+        grid-template-rows: repeat(25,250px);
     }
 }
 /*Footer stylings*/
@@ -472,4 +477,15 @@ footer h3{
 }
 .container5 section a:hover{
     color: blue;
+}
+/*meats, fruits and bac ing. pages mobile*/
+@media screen and (max-width:500px) {
+    .container5{
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(10,300px);
+    }
+    .container3, .container4{
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(10,250px);
+    }
 }
