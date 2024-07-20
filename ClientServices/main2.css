@@ -361,6 +361,42 @@
         font-size: 16px;
     }
 }
+/* pay page stylings */
+#pay_table{
+    width: 100%;
+    font-size: large;
+    color: black;
+    border-collapse: collapse;
+    background-color: grey;
+}
+#pay_table, #pay_table th, #pay_table td{
+    border: 1px solid black;
+}
+#pay_table th, #pay_table td{
+    padding: 10px;
+    text-align: center;
+}
+#pay_table input[type = "text"],#pay_table input[type = "number"],#pay_table input[type = "email"]{
+    width: 70%;
+    font-size: larger;
+    outline: none;
+    padding: 10px;
+}
+#pay_btn{
+    background-color: gray;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#pay_btn:hover {
+    background-color: white;
+    color: black;
+    opacity: 0.9;
+    border: 2px solid;
+    box-shadow: 1px 1px 2px black;
+}
 
 /*Footer stylings*/
 /*footer{

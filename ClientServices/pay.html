@@ -29,10 +29,10 @@
     </nav>
     <main>
         <div>
-
+            <p id="order_detais"></p>
         </div>
-        <div>
-            <table>
+        <div id="pay_container">
+            <table id="pay_table">
                 <tr>
                     <th>Customer Name:</th>
                     <th><input type="text" required></th>
@@ -50,10 +50,33 @@
                     <th><input type="email" required></th>
                 </tr>
                 <tr>
-                    <th>Payment Method:</th>
-                    <th>Visa<input type="radio" name="f"> Cash on Delivery<input type="radio" name="f"></th>
+                    <th>Payment Method(Online):</th>
+                    <th>Visa<input type="radio" name="f"> Debit<input type="radio" name="f"></th>
+                </tr>
+                <tr>
+                    <th>Card Number:</th>
+                    <th><input type="number" min="0" required></th>
+                </tr>
+                <tr>
+                    <th>Card Owner:</th>
+                    <th><input type="text" required></th>
+                </tr>
+                <tr>
+                    <th>Expire Date:</th>
+                    <th><input type="date" required></th>
+                </tr>
+                <tr>
+                    <th>Security Number:</th>
+                    <th><input type="number" required min="0" maxlength="3" placeholder="123"></th>
                 </tr>
             </table>
+            <div class="btn_container">
+                <button type="button" id="pay_btn">PAY NOW</button>
+            </div>
+            
+        </div>
+        <div>
+            <p id="output_pay"></p>
         </div>
     </main>
     <a href="#bada" id="scroll"><img src="../Home/Images/scroll-up.png" alt="scroll up" width="26px" height="26px"></a>
