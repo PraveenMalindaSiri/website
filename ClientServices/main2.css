@@ -242,6 +242,10 @@
     padding: 20px;
     box-shadow: 2px 2px 2px grey;
 }
+.order-container section:hover{
+    background-color: gray;
+    transition: .4s;
+}
 .order-container section select option{
     font-size: large;
 }
@@ -249,6 +253,7 @@
     width: 13%;
     font-size: large;
     padding: 2px;
+    outline: none;
 }
 /* Table styling */
 .order-table{
@@ -279,9 +284,6 @@
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    margin-left: 350px;
-    margin-bottom: 20px;
-    margin-top: 10px;
 }
 #submit_btn:hover {
     background-color: black;
@@ -296,7 +298,6 @@
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    margin-left: 150px;
 }
 #favourite_btn:hover{
     background-color: red;
@@ -311,12 +312,18 @@
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    margin-left: 50px;
 }
 #apply_btn:hover{
     background-color: blue;
     opacity: 0.9;
     box-shadow: 1px 1px 2px black;
+}
+/* button container */
+.btn_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 /* Order Page Mobile view */
 @media screen and (max-width: 1100px){
