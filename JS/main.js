@@ -17,6 +17,7 @@ const fruitAmount = document.getElementById("f_amount");
 const skin = document.getElementById("skin");
 const skinAmount = document.getElementById("s_amount");
 
+const toutput1 = document.getElementById("output1")
 const orederTable = document.getElementById("order-table");
 const submitOrderBtn = document.getElementById("submit_btn");
 
@@ -74,8 +75,10 @@ let skinp = {
 
 // Prices of products
 function getPrice(product, priceOBJ){
-    return priceOBJ[product] // this is giving the price of a product;
+    return priceOBJ[product]; // this is giving the price of a product;
 }
+
+let totalP = 0;
 
 // fill the table
 function fillTable(){
@@ -98,28 +101,36 @@ function fillTable(){
 
     if (vegValue && vegAmountValue > 0){
         const vegP = (getPrice(vegValue, vegetables)) * vegAmountValue;
-        orederTable.appendChild(createRow(vegValue, vegAmountValue, vegP));
+        totalP += vegP;
+        orederTable.appendChild(createRow(vegValue, vegAmountValue, vegP));  
     }
     if (dairyValue && dairyAmountValue > 0){
         const dairyP = (getPrice(dairyValue, dairyp)) * dairyAmountValue;
+        totalP += dairyP;
         orederTable.appendChild(createRow(dairyValue, dairyAmountValue, dairyP));
     }
     if (bncValue && bncAmountValue > 0){
         const bncP = (getPrice(bncValue, bncs)) * bncAmountValue;
+        totalP += bncP;
         orederTable.appendChild(createRow(bncValue, bncAmountValue, bncP));
     }
     if (meatValue && meatAmountValue > 0){
         const meatP = (getPrice(meatValue, meats)) * meatAmountValue;
+        totalP += meatP;
         orederTable.appendChild(createRow(meatValue, meatAmountValue, meatP));
     }
     if (fruitValue && fruitAmountValue > 0){
         const fruitP = (getPrice(fruitValue, fruits)) * fruitAmountValue;
+        totalP = totalP + fruitP;
         orederTable.appendChild(createRow(fruitValue, fruitAmountValue, fruitP));
     }
     if (skinValue && skinAmountValue > 0){
         const skinP = (getPrice(skinValue, skinp)) * skinAmountValue;
+        totalP += skinP
         orederTable.appendChild(createRow(skinValue, skinAmountValue, skinP));
     }
+
+    toutput1.textContent = `Your total price is ${totalP}.`;
 
     // Clearing the fields after a submit
     vegetable.value = "";
@@ -145,9 +156,8 @@ function createRow(product, amount, price){
     const priceCell = document.createElement("td");
 
     produceCell.textContent = product;
-    amountCell.textContent = amount + "kg";
+    amountCell.textContent = amount;
     priceCell.textContent = price;
-
 
     tr.appendChild(produceCell);
     tr.appendChild(amountCell);

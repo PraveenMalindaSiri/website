@@ -259,17 +259,17 @@
 .order-table{
     width: 100%;
     border-collapse: collapse;
+    color: black;
 }
 .order-table, .order-table th, .order-table td{
     border: 1px solid black;
 }
 .order-table th, .order-table td{
-    padding: 8px;
+    padding: 10px;
     text-align: center;
 }
 .order-table tr:nth-child(even){
     background-color: grey;
-    opacity: 0.6;
 }
 .order-table tr:hover{
     background-color: black;
@@ -314,7 +314,7 @@
     border-radius: 4px;
 }
 #apply_btn:hover{
-    background-color: blue;
+    background-color: brown;
     opacity: 0.9;
     box-shadow: 1px 1px 2px black;
 }
@@ -344,7 +344,11 @@
         font-size: 16px;
     }
 }
-
+#output1{
+    font-size: larger;
+    text-align: center;
+    color: blue;
+}
 
 
 /*Footer stylings*/
