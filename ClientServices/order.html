@@ -40,94 +40,135 @@
                 </p>
             </section>
             <section>
-                <!-- order page form -->
-                <form class="form2">
-                    <fieldset>
-                        <fieldset>
-                            <h2>Products Selection</h2>
-                            Catagory:<select name="categories" required>
-                                <option>Vagetables</option>
-                                <option>Diary Products</option>
-                                <option>Skin care Products</option>
-                            </select><br><br>
-                            Products:<textarea name="products" rows="15" cols="40">Enter your product's name and the amount in grams or pieces</textarea>
-                        </fieldset>
-                        <fieldset>
-                            <h2>Details and Payment method</h2>
-                            <table>
-                                <tr>
-                                    <td>Shopper Name:</td>
-                                    <td><input type="text" maxlength="30" required></td>
-                                </tr>
-                                <tr>
-                                    <td>Address:</td>
-                                    <td><textarea rows="5" cols="25" required>Type your address</textarea><br><br></td>
-                                </tr>
-                                <tr>
-                                    <td>Mobile:</td>
-                                    <td><input type="text" required maxlength="10"></td>
-                                </tr>
-                                <tr>
-                                    <td>Email:</td>
-                                    <td><input type="email"></td>
-                                </tr>
-                                <tr>
-                                    <td>Payment Method:</td><br>
-                                    <td>Visa<input type="radio"> Credit<input type="radio"> Debit<input type="radio"></td>
-                                </tr>
-                                <tr>
-                                    <td>Card Number:</td>
-                                    <td><input type="text" maxlength="16" required placeholder="xxxx xxxx xxxx xxxx"></td>
-                                </tr>
-                                <tr>
-                                    <td>Expire Date:</td>
-                                    <td><input type="date" required></td>
-                                </tr>
-                                <tr>
-                                    <td>Security Code:</td>
-                                    <td><input type="text" required> </td>
-                                </tr>
-                            </table>
-                        </fieldset>
-                        <input type="submit" value="Confirm the order">
-                        <input type="reset" value="Refill">
-                        </fieldset>
-                    </fieldset>
-                </form>
-            </section>
-            <section>
-                <!-- order page form mobile -->
-                <form class="form2-mobile">
-                    <h3 >Products Selection</h3>
-                    Catagory:<select name="categories" required>
-                        <option>Vagetables</option>
-                        <option>Diary Products</option>
-                        <option>Skin care Products</option>
-                    </select><br><br>
-                    Products: <br>
-                    <textarea name="products" rows="5" cols="25">Enter your product's name and the amount in grams or pieces</textarea>
-                    <h3>Details and Payment method</h3>
-                    Shopper Name: <br>
-                    <input type="text" maxlength="30" required><br><br>
-                    Address: <br>
-                    <textarea rows="5" cols="25" required>Type your address</textarea><br><br>
-                    Mobile: <br>
-                    <input type="text" required maxlength="10"> <br><br>
-                    Email: <br>
-                    <input type="email"><br><br>
-                    Payment Method:<br><br> 
-                    Visa<input type="radio">
-                    Credit<input type="radio">
-                    Debit<input type="radio"><br><br>
-                    Card Number: <br>
-                    <input type="text" maxlength="16" required placeholder="xxxx xxxx xxxx xxxx"><br><br>
-                    Expire Date: <br>
-                    <input type="date" required><br><br>
-                    Security Code: <br>
-                    <input type="text" required><br><br>
-                    <input type="submit" value="Confirm the order">
-                    <input type="reset" value="Refill">
-                </form>
+
+                <div class="order-container" id="order-container">
+                    <section>
+                        <h2>Vegetables</h2>
+                        Product: <select id="veg">
+                            <option value="" hidden disabled selected></option>
+                            <option value="Beetroot">Beetroot</option>
+                            <option value="Bell Pepper  Green">Bell Pepper Green</option>
+                            <option value="Bell Pepper  Red">Bell Pepper Red</option>
+                            <option value="Big Onions">Big Onions</option>
+                            <option value="Cabbage">Cabbage</option>
+                            <option value="Carrot">Carrot</option>
+                            <option value="Cauliflower">Cauliflower</option>
+                            <option value="Celery">Celery </option>
+                            <option value="Coconut">Coconut (1 Unit)</option>
+                            <option value="Gotukola">Gotukola (1 Unit)</option>
+                            <option value="Green Beans">Green Beans</option>
+                            <option value="Green Chilies">Green Chilies</option>
+                            <option value="Tomatoes">Tomatoes</option>
+                            <option value="Oyester Mushroom">Oyester Mushroom (1 Unit)</option>
+                            <option value="Leeks">Leeks</option>
+                            <option value="Potato">Potato</option>
+                        </select><br><br>
+                        Amout: <input type="number" value="1" required id="v_amount" min="0">
+                    </section>
+                    <section>
+                        <h2>Dairy</h2>
+                        Product: <select id="dairy">
+                            <option value="" hidden disabled selected></option>
+                            <option value="Ambewela set yogurt">Ambewela set yogurt</option>
+                            <option value="Castello Cheese">Castello Cheese</option>
+                            <option value="Highland Set Yoghurt">Highland Set Yoghurt</option>
+                            <option value="Kotmale Cheese Wedges">Kotmale Cheese Wedges</option>
+                            <option value="Kotmale Drinking Yoghurt Wood Apple">Kotmale Drinking Yoghurt Wood Apple</option>
+                            <option value="Kotmale Fresh Cream">Kotmale Fresh Cream</option>
+                            <option value="Kotmale Fresh Milk Full Cream">Kotmale Fresh Milk Full Cream</option>
+                            <option value="Kotmale Set Yoghurt">Kotmale Set Yoghurt</option>
+                            <option value="Kotmale Spread Cheese">Kotmale Spread Cheese</option>
+                            <option value="Meadowlea Spread">Meadowlea Spread</option>
+                            <option value="Pelwatte Butter Garlic">Pelwatte Butter Garlic</option>
+                            <option value="Richlife Butter Salted">Richlife Butter Salted</option>
+                        </select><br><br>
+                        Amout (1 Unit): <input type="number" value="1" required id="d_amount" min="0">
+                    </section>
+                    <section>
+                        <h2></h2>
+                        Products: <select id="bnc">
+                            <option value="" hidden disabled selected></option>
+                            <option value="Edinborough B.B.Q Sauce">Edinborough B.B.Q Sauce</option>
+                            <option value="Edinborough Superior Dark Soy Sauce">Edinborough Superior Dark Soy Sauce</option>
+                            <option value="Marina Cooking Oil">Marina Cooking Oil</option>
+                            <option value="Mauripan Instant Dry Yeast">Mauripan Instant Dry Yeast </option>
+                            <option value="Rayin White String Hopper Rice Flour 1Kg">Rayin White String Hopper Rice Flour 1Kg</option>
+                            <option value="Motha Corn Flour">Motha Corn Flour</option>
+                            <option value="Nipuna Rice Red Raw 5Kg">Nipuna Rice Red Raw 5Kg</option>
+                            <option value="Nipuna Rice White Nadu 10Kg">Nipuna Rice White Nadu 10Kg</option>
+                            <option value="Star Gold White Sugar 1kg">Star Gold White Sugar 1kg</option>
+                            <option value="Wheat Flour- Bulk 1Kg">Wheat Flour - Bulk 1Kg</option>
+                        </select><br><br>
+                        Amount (1 Unit): <input type="number" value="1" required id="bnc_amount" min="0">
+                    </section>
+                    <section>
+                        <h2>Meats</h2>
+                        Product: <select id="meats">
+                            <option value="" hidden disabled selected></option>
+                            <option value="Beef Topside">Beef Topside</option>
+                            <option value="chicken drumsticks">Chicken Drumsticks</option>
+                            <option value="Chicken Gizzard">Chicken Gizzard</option>
+                            <option value="chicken liver">Chicken Liver</option>
+                            <option value="chicken thigh">Chicken Thigh</option>
+                            <option value="chicken leg">Chicken Leg</option>
+                            <option value="Chicken Winglets">Chicken Winglets</option>
+                            <option value="Elephant House Corned Beef">Elephant House Corned Beef 250G (1 Unit)</option>
+                            <option value="Keells Chicken Meat Balls">Keells Chicken Meat Balls 500G (1 Unit)</option>
+                            <option value="Prima Chicken Bacon Slices">Prima Chicken Bacon Slices 165G (1 Unit)</option>
+                        </select><br><br>
+                        Amout: <input type="number" value="300" required id="m_amount" min="0">
+                    </section>
+                    <section>
+                        <h2></h2>
+                        Products: <select id="fruits">
+                            <option value="" hidden disabled selected></option>
+                            <option value="Apple Green">Apple Green</option>
+                            <option value="Apple Red">Apple Red</option>
+                            <option value="Apple Royal Gala">Apple Royal Gala</option>
+                            <option value="Avocado">Avocado</option>
+                            <option value="Grapes Black">Grapes Black</option>
+                            <option value="Grapes Red">Grapes Red</option>
+                            <option value="Mandarin">Mandarin</option>
+                            <option value="Orange">Orange</option>
+                            <option value="Pineapple">Pineapple (1 Unit)</option>
+                            <option value="Pomegranate">Pomegranate</option>
+                        </select><br><br>
+                        Amount: <input type="number" value="1" required id="f_amount" min="0">
+                    </section>
+                    <section>
+                        <h2></h2>
+                        Products: <select id="skin">
+                            <option value="" hidden disabled selected></option>
+                            <option value="Aurica Alovera Face Wash">Aurica Alovera Face Wash</option>
+                            <option value="Aurica Neem Face Wash">Aurica Neem Face Wash</option>
+                            <option value="Enchanteur Body Lotion Alluring">Enchanteur Body Lotion Alluring</option>
+                            <option value="Enchanteur Body Lotion Romantic">Enchanteur Body Lotion Romantic</option>
+                            <option value="La Perfumerie Devil Of Paris">La Perfumerie Devil Of Paris (Perfume)</option>
+                            <option value="Vaseline Body Lotion Advanced Repair">Vaseline Body Lotion Advanced Repair</option>
+                            <option value="Vivya Intense Restore Night Cream">Vivya Intense Restore Night Cream</option>
+                            <option value="Veet Hair Removing Cream Normal Skin">Veet Hair Removing Cream Normal Skin</option>
+                            <option value="Vaseline Body Lotion Aloe & Fresh">Vaseline Body Lotion Aloe & Fresh</option>
+                            <option value="Vaseline Body Lotion Cocoa Glow">Vaseline Body Lotion Cocoa Glow </option>
+                        </select><br><br>
+                        Amount (1 Unit): <input type="number" value="1" required id="s_amount" min="0">
+                    </section>
+                </div>
+                <button type="button" id="submit_btn">Submit Order</button>
+                <!-- <button type="button" id="favourite_btn">Add to Favourites</button> -->
+                <!-- <button type="button" id="apply_btn">Apply Favourite</button> -->
+            
+            
+                <div class="order-table-container" id="order-table-container">
+                    <table id="order-table" class="order-table">
+                        <tr>
+                            <th>Product</th>
+                            <th>Amout</th>
+                            <th>Price</th>
+                        </tr>
+                        <!-- Table body is here -->
+                    </table>
+                </div>
+
             </section>
         </div>
     </main><br>

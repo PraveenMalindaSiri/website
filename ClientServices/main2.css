@@ -214,71 +214,46 @@
     }
 }
 /*Styling the order form*/
-.form2{
-    width: 600px;
-    font-size: 20px;
-    margin: 0 auto;
+.order-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid;
+    padding: 20px;
+    margin-bottom: 10px;
+    gap: 30px;
 }
-.form2 input, .form2 textarea{
-    background-color: rgb(234, 192, 85);
-    margin: 4px;
-    padding: 14px;
-    border-radius: 20px;
-    border: 2px solid brown;
+.order-container section{
+    border: 2px solid;
+    padding: 20px;
 }
-.form2 input[type="submit"], .form2 input[type="reset"]{
+.order-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.order-table, .order-table th, .order-table td{
+    border: 1px solid black;
+}
+.order-table th, .order-table td{
+    padding: 8px;
+    text-align: center;
+}
+#submit_btn{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border: none;
     cursor: pointer;
-    padding: 10px;
+    border-radius: 4px;
+    margin: 10px;
 }
-.form2 input[type="submit"]:hover{
-    color: white;
-}
-.form2 fieldset{
-    border: solid 2px black;
-}
-.form2 legend{
-    font-size: larger;
-    font-style: italic;
-}
-.order-intro{
-    background-color: rgba(27, 24, 105, 0.747);
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 10px;
-    border: 2px solid slategray;
-    border-radius: 5px;
-    font-size: large;
-    color: white;
-}
-.form2-mobile{
-    display: none;
-}
-/*Order page mobile*/
-@media screen and (max-width:500px) {
-    .form2{
-        display: none;
-    }
-    .form2-mobile{
-        display: block;
-        font-size: 20px;
-        border: 1px solid black;
-        padding: 10px;
-        background-color: #f0f0f0;
-    }
-    .form2-mobile input, .form2-mobile textarea{
-        margin: 4px;
-        border: 2px solid brown;
-        font-size: large;
-        padding: 10px;
-        border-radius: 30px;
-        width:300px;
-    }
-    .form2-mobile input[type="radio"]{
-        width: auto;
-    }
-    .form2-mobile input[type="submit"]:hover{
-        background-color: rgb(255, 176, 7);
-    }
+
+#submit_btn:hover {
+    background-color: black;
+    opacity: 0.9;
+    box-shadow: 1px 1px 2px black;
 }
 /*Footer stylings*/
 /*footer{
