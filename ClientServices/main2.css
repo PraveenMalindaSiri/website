@@ -321,6 +321,20 @@
     opacity: 0.9;
     box-shadow: 1px 1px 2px black;
 }
+/* buy now btn */
+#buy{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#buy:hover{
+    background-color: green;
+    opacity: 0.9;
+    box-shadow: 1px 1px 2px black;
+}
 /* button container */
 .btn_container{
     display: flex;
