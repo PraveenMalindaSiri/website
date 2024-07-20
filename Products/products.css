@@ -358,7 +358,7 @@ footer h3{
     font-size: large;
     justify-content: space-evenly;
     grid-template-columns: repeat(5,170px);
-    grid-template-rows: repeat(2, auto) ;
+    grid-template-rows: repeat(3, auto) ;
     row-gap: 30px;
     margin-bottom: 10px;
 }
@@ -490,8 +490,12 @@ footer h3{
         grid-template-columns: repeat(1,auto);
         grid-template-rows: repeat(10,300px);
     }
-    .container3, .container4{
+    .container3{
         grid-template-columns: repeat(1,auto);
-        grid-template-rows: repeat(10,250px);
+        grid-template-rows: repeat(10,270px);
+    }
+    .container4{
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(10,250px)
     }
 }
