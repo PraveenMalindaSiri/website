@@ -271,6 +271,9 @@
 .order-table tr:nth-child(even){
     background-color: grey;
 }
+#output_tr{
+    background-color: blue;
+}
 .order-table tr:hover{
     background-color: black;
     opacity: 0.6;
@@ -344,12 +347,6 @@
         font-size: 16px;
     }
 }
-#output1{
-    font-size: larger;
-    text-align: center;
-    color: blue;
-}
-
 
 /*Footer stylings*/
 /*footer{

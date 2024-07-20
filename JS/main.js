@@ -17,7 +17,7 @@ const fruitAmount = document.getElementById("f_amount");
 const skin = document.getElementById("skin");
 const skinAmount = document.getElementById("s_amount");
 
-const toutput1 = document.getElementById("output1")
+const tableOutput = document.getElementById("table_output");
 const orederTable = document.getElementById("order-table");
 const submitOrderBtn = document.getElementById("submit_btn");
 
@@ -130,7 +130,7 @@ function fillTable(){
         orederTable.appendChild(createRow(skinValue, skinAmountValue, skinP));
     }
 
-    toutput1.textContent = `Your total price is ${totalP}.`;
+    tableOutput.textContent = `${totalP}`;
 
     // Clearing the fields after a submit
     vegetable.value = "";
