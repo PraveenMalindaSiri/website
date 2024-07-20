@@ -250,6 +250,7 @@
     font-size: large;
     padding: 2px;
 }
+/* Table styling */
 .order-table{
     width: 100%;
     border-collapse: collapse;
@@ -270,6 +271,7 @@
     opacity: 0.6;
     color: white;
 }
+/* Submit btn */
 #submit_btn{
     background-color: gray;
     color: white;
@@ -277,11 +279,42 @@
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    margin: 10px;
+    margin-left: 350px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
-
 #submit_btn:hover {
     background-color: black;
+    opacity: 0.9;
+    box-shadow: 1px 1px 2px black;
+}
+/* Favourite btn */
+#favourite_btn{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 150px;
+}
+#favourite_btn:hover{
+    background-color: red;
+    opacity: 0.9;
+    box-shadow: 1px 1px 2px black;
+}
+/* Apply btn */
+#apply_btn{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 50px;
+}
+#apply_btn:hover{
+    background-color: blue;
     opacity: 0.9;
     box-shadow: 1px 1px 2px black;
 }

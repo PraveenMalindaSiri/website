@@ -70,9 +70,11 @@ let skinp = {
     "Vaseline Body Lotion Aloe & Fresh": 450,"Vaseline Body Lotion Cocoa Glow": 3000,
 }
 
+// console.log(vegetables["Carrot"])
+
 // Prices of products
 function getPrice(product, priceOBJ){
-    return priceOBJ[product];
+    return priceOBJ[product] // this is giving the price of a product;
 }
 
 // fill the table
@@ -92,39 +94,34 @@ function fillTable(){
     const fruitAmountValue = fruitAmount.value;
     const skinAmountValue = skinAmount.value;
 
-    function createRow(product, amount, price){
-        const tr = document.createElement("tr");
-        const produceCell = document.createElement("td");
-        const amountCell = document.createElement("td");
-        const priceCell = document.createElement("td");
+    // check if the product is selected, then add it to the table
 
-        produceCell.textContent = product;
-        amountCell.textContent = amount + "kg";
-        priceCell.textContent = price;
-
-
-        tr.appendChild(produceCell);
-        tr.appendChild(amountCell);
-        tr.appendChild(priceCell);
-
-        return tr;
+    if (vegValue && vegAmountValue > 0){
+        const vegP = (getPrice(vegValue, vegetables)) * vegAmountValue;
+        orederTable.appendChild(createRow(vegValue, vegAmountValue, vegP));
+    }
+    if (dairyValue && dairyAmountValue > 0){
+        const dairyP = (getPrice(dairyValue, dairyp)) * dairyAmountValue;
+        orederTable.appendChild(createRow(dairyValue, dairyAmountValue, dairyP));
+    }
+    if (bncValue && bncAmountValue > 0){
+        const bncP = (getPrice(bncValue, bncs)) * bncAmountValue;
+        orederTable.appendChild(createRow(bncValue, bncAmountValue, bncP));
+    }
+    if (meatValue && meatAmountValue > 0){
+        const meatP = (getPrice(meatValue, meats)) * meatAmountValue;
+        orederTable.appendChild(createRow(meatValue, meatAmountValue, meatP));
+    }
+    if (fruitValue && fruitAmountValue > 0){
+        const fruitP = (getPrice(fruitValue, fruits)) * fruitAmountValue;
+        orederTable.appendChild(createRow(fruitValue, fruitAmountValue, fruitP));
+    }
+    if (skinValue && skinAmountValue > 0){
+        const skinP = (getPrice(skinValue, skinp)) * skinAmountValue;
+        orederTable.appendChild(createRow(skinValue, skinAmountValue, skinP));
     }
 
-    // Get the price using getPrice functoin
-    const vegP = (getPrice(vegValue, vegetables)) * vegAmountValue;
-    const dairyP = (getPrice(dairyValue, dairyp)) * dairyAmountValue;
-    const bncP = (getPrice(bncValue, bncs)) * bncAmountValue;
-    const meatP = (getPrice(meatValue, meats)) * meatAmountValue;
-    const fruitP = (getPrice(fruitValue, fruits)) * fruitAmountValue;
-    const skinP = (getPrice(skinValue, skinp)) * skinAmountValue;
-
-    orederTable.appendChild(createRow(vegValue, vegAmountValue, vegP));
-    orederTable.appendChild(createRow(dairyValue, dairyAmountValue, dairyP));
-    orederTable.appendChild(createRow(bncValue, bncAmountValue, bncP));
-    orederTable.appendChild(createRow(meatValue, meatAmountValue, meatP));
-    orederTable.appendChild(createRow(fruitValue, fruitAmountValue, fruitP));
-    orederTable.appendChild(createRow(skinValue, skinAmountValue, skinP));
-
+    // Clearing the fields after a submit
     vegetable.value = "";
     vegetableAmount.value = "";
     dairy.value = "";
@@ -138,6 +135,25 @@ function fillTable(){
     bnc.value = "";
     fruit.value = "";
 
+}
+
+// Creating rows
+function createRow(product, amount, price){
+    const tr = document.createElement("tr");
+    const produceCell = document.createElement("td");
+    const amountCell = document.createElement("td");
+    const priceCell = document.createElement("td");
+
+    produceCell.textContent = product;
+    amountCell.textContent = amount + "kg";
+    priceCell.textContent = price;
+
+
+    tr.appendChild(produceCell);
+    tr.appendChild(amountCell);
+    tr.appendChild(priceCell);
+
+    return tr;
 }
 
 submitOrderBtn.addEventListener("click", fillTable);
