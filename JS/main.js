@@ -28,9 +28,9 @@ let vegetables = {
     "Bell Pepper  Red": 950, "Big Onions": 700,
     "Cabbage": 400, "Carrot": 560,
     "Cauliflower": 690, "Celery": 660,
-    "Coconut": 110,"Gotukola": 85,
+    "Cucumber": 120,"Dambala": 500,
     "Green Beans": 800,"Green Chilies": 350,
-    "Tomatoes": 700,"Oyester Mushroom": 200,
+    "Tomatoes": 700,"Pumpkin": 300,
     "Leeks": 300, "Potato": 400,
 }
 let dairyp = {
@@ -45,9 +45,7 @@ let meats = {
     "Beef Topside": 4000,"chicken drumsticks": 2000,
     "Chicken Gizzard": 1500,"chicken liver": 1200,
     "chicken thigh": 2000,"chicken Whole Legs": 1900,
-    "Chicken Winglets": 1300,"Elephant House Corned Beef":1100,
-    "Keells Chicken Meat Balls": 1000,"Prima Chicken Bacon Slices": 650,
-    "Alagoduwa": 1120,"Paraw Fish Slice": 3330,
+    "Chicken Winglets": 1300,"Alagoduwa": 1120,"Paraw Fish Slice": 3330,
     "Prawns": 2660,"Thalapath": 3360,"Tuna": 2620,
 }
 let bncs = {
@@ -62,7 +60,7 @@ let fruits = {
     "Apple Green": 1700,"Apple Red": 2000,"Apple Royal Gala": 2100,
     "Avocado": 500,"Grapes Black": 3000,"Grapes Red": 2700,
     "Mandarin": 1600,"Orange": 1800,
-    "Pineapple": 600,"Pomegranate": 3000,
+    "Mango": 780,"Pomegranate": 3000,
 }
 let skinp = {
     "Aurica Alovera Face Wash": 400,"Aurica Neem Face Wash": 410,
@@ -101,7 +99,7 @@ function fillTable(){
         const priceCell = document.createElement("td");
 
         produceCell.textContent = product;
-        amountCell.textContent = amount;
+        amountCell.textContent = amount + "kg";
         priceCell.textContent = price;
 
 
@@ -113,10 +111,10 @@ function fillTable(){
     }
 
     // Get the price using getPrice functoin
-    const vegP = (getPrice(vegValue, vegetables)/1000) * vegAmountValue;
+    const vegP = (getPrice(vegValue, vegetables)) * vegAmountValue;
     const dairyP = (getPrice(dairyValue, dairyp)) * dairyAmountValue;
     const bncP = (getPrice(bncValue, bncs)) * bncAmountValue;
-    const meatP = (getPrice(meatValue, meats)/1000) * meatAmountValue;
+    const meatP = (getPrice(meatValue, meats)) * meatAmountValue;
     const fruitP = (getPrice(fruitValue, fruits)) * fruitAmountValue;
     const skinP = (getPrice(skinValue, skinp)) * skinAmountValue;
 
