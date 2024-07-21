@@ -412,6 +412,11 @@
     margin: 20px;
     border-radius: 20px;
 }
+#output_pay{
+    text-align: center;
+    font-size: larger;
+    color: red;
+}
 /*Footer stylings*/
 /*footer{
     color: white;

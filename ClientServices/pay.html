@@ -28,7 +28,6 @@
         </ul>
     </nav>
     <main>
-
         <div id="order_detais_container">
             <p id="totalP"></p>
         </div>
@@ -61,20 +60,21 @@
                     </tr>
                     <tr>
                         <th>Card Owner:</th>
-                        <th><input type="text" required></th>
+                        <th><input type="text" required id="c_cname"></th>
                     </tr>
                     <tr>
                         <th>Expire Date:</th>
-                        <th><input type="date" required></th>
+                        <th><input type="date" required id="c_exd"></th>
                     </tr>
                     <tr>
                         <th>Security Number:</th>
-                        <th><input type="number" required min="0" maxlength="3" placeholder="123"></th>
+                        <th><input type="number" required min="0" id="c_csecnum" maxlength="3" placeholder="123"></th>
                     </tr>
                 </table>
             </div>
             <div class="btn_container">
-                <input type="submit" id="pay_btn" value="PAY NOW">
+                <button type="submit" id="pay_btn">PAY NOW</button>
+                <!-- <input type="submit" id="pay_btn" value="PAY NOW"> -->
             </div>
         </form>
         <div>
@@ -139,7 +139,7 @@
     </footer>
 
     <script src="../JS/navbar.js"></script>
-    <script src="../JS/main.js"></script>
+    <!-- <script src="../JS/main.js"></script> -->
     <script src="../JS/main2.js"></script>
 </body>
 </html>
