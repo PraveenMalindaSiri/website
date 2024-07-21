@@ -186,6 +186,7 @@ function getorderDetails() {
     });
 
     localStorage.setItem("orderDetails", JSON.stringify(orderDetails));
+    localStorage.setItem("TotalPrice", JSON.stringify(totalP));
 
     window.location.href = "pay.html";
 }

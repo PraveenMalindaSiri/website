@@ -1,7 +1,9 @@
 function orderDetailsPay() {
     const orderDetailsContainer = document.getElementById("order_detais_container");
+    const totalPara = document.getElementById("totalP");
 
     const orderDetails = JSON.parse(localStorage.getItem("orderDetails"));
+    const totalPrice = JSON.parse(localStorage.getItem("TotalPrice"))
 
     if(orderDetails && orderDetails.length > 0){
         orderDetails.forEach(element => {
@@ -13,6 +15,8 @@ function orderDetailsPay() {
     else{
         orderDetailsContainer.textContent = `NO Order details.`
     }
+
+    totalPara.textContent = `Total Price Rs.${totalPrice}/=`;
 
 }
 orderDetailsPay();
