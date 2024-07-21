@@ -28,53 +28,55 @@
         </ul>
     </nav>
     <main>
-        <div>
-            <p id="order_detais"></p>
+
+        <div id="order_detais_container">
+            <p id="totalP"></p>
         </div>
-        <div id="pay_container">
-            <table id="pay_table">
-                <tr>
-                    <th>Customer Name:</th>
-                    <th><input type="text" required></th>
-                </tr>
-                <tr>
-                    <th>Address:</th>
-                    <th><textarea required></textarea></th>
-                </tr>
-                <tr>
-                    <th>Mobile:</th>
-                    <th><input type="text" required min="0" maxlength="10"></th>
-                </tr>
-                <tr>
-                    <th>Email:</th>
-                    <th><input type="email" required></th>
-                </tr>
-                <tr>
-                    <th>Payment Method(Online):</th>
-                    <th>Visa<input type="radio" name="f"> Debit<input type="radio" name="f"></th>
-                </tr>
-                <tr>
-                    <th>Card Number:</th>
-                    <th><input type="number" min="0" required></th>
-                </tr>
-                <tr>
-                    <th>Card Owner:</th>
-                    <th><input type="text" required></th>
-                </tr>
-                <tr>
-                    <th>Expire Date:</th>
-                    <th><input type="date" required></th>
-                </tr>
-                <tr>
-                    <th>Security Number:</th>
-                    <th><input type="number" required min="0" maxlength="3" placeholder="123"></th>
-                </tr>
-            </table>
-            <div class="btn_container">
-                <button type="button" id="pay_btn">PAY NOW</button>
+        <form id="pay-form">
+            <div id="pay_container">
+                <table id="pay_table">
+                    <tr>
+                        <th>Customer Name:</th>
+                        <th><input type="text" required id="c_name"></th>
+                    </tr>
+                    <tr>
+                        <th>Address:</th>
+                        <th><textarea required id="c_address"></textarea></th>
+                    </tr>
+                    <tr>
+                        <th>Mobile:</th>
+                        <th><input type="text" required min="0" maxlength="10" minlength="10" id="c_pnum"></th>
+                    </tr>
+                    <tr>
+                        <th>Email:</th>
+                        <th><input type="email" required id="c_email"></th>
+                    </tr>
+                    <tr>
+                        <th>Payment Method(Online):</th>
+                        <th>Visa<input type="radio" name="f" value="visa"> Debit<input type="radio" name="f" value="Debit"></th>
+                    </tr>
+                    <tr>
+                        <th>Card Number:</th>
+                        <th><input type="text" min="0" required id="c_cnum"></th>
+                    </tr>
+                    <tr>
+                        <th>Card Owner:</th>
+                        <th><input type="text" required></th>
+                    </tr>
+                    <tr>
+                        <th>Expire Date:</th>
+                        <th><input type="date" required></th>
+                    </tr>
+                    <tr>
+                        <th>Security Number:</th>
+                        <th><input type="number" required min="0" maxlength="3" placeholder="123"></th>
+                    </tr>
+                </table>
             </div>
-            
-        </div>
+            <div class="btn_container">
+                <input type="submit" id="pay_btn" value="PAY NOW">
+            </div>
+        </form>
         <div>
             <p id="output_pay"></p>
         </div>
@@ -138,5 +140,6 @@
 
     <script src="../JS/navbar.js"></script>
     <script src="../JS/main.js"></script>
+    <script src="../JS/main2.js"></script>
 </body>
 </html>

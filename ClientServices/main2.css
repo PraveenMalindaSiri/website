@@ -322,7 +322,7 @@
     box-shadow: 1px 1px 2px black;
 }
 /* buy now btn */
-#buy{
+#buy_btn{
     background-color: gray;
     color: white;
     padding: 10px;
@@ -330,7 +330,7 @@
     cursor: pointer;
     border-radius: 4px;
 }
-#buy:hover{
+#buy_btn:hover{
     background-color: green;
     opacity: 0.9;
     box-shadow: 1px 1px 2px black;
@@ -349,6 +349,9 @@
         grid-template-rows: repeat(6, 270px);
         gap: 30px;
     }   
+    .btn_container{
+        margin: 20px;
+    }
 }
 @media screen and (max-width: 600px){
     .order-container{
@@ -359,6 +362,9 @@
     }   
     .order-container section{
         font-size: 16px;
+    }
+    .btn_container{
+        margin: 10px;
     }
 }
 /* pay page stylings */
@@ -397,7 +403,15 @@
     border: 2px solid;
     box-shadow: 1px 1px 2px black;
 }
-
+#order_detais_container p{
+    text-align: center;
+    font-size: larger;
+}
+#order_detais_container{
+    border: 1px solid;
+    margin: 20px;
+    border-radius: 20px;
+}
 /*Footer stylings*/
 /*footer{
     color: white;

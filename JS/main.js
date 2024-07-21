@@ -19,6 +19,8 @@ const skinAmount = document.getElementById("s_amount");
 
 const tableOutput = document.getElementById("table_output");
 const orederTable = document.getElementById("order-table");
+
+const buynowBtn = document.getElementById("buy_btn");
 const submitOrderBtn = document.getElementById("submit_btn");
 
 
@@ -102,7 +104,7 @@ function fillTable(){
     if (vegValue && vegAmountValue > 0){
         const vegP = (getPrice(vegValue, vegetables)) * vegAmountValue;
         totalP += vegP;
-        orederTable.appendChild(createRow(vegValue, vegAmountValue, vegP));  
+        orederTable.appendChild(createRow(vegValue, vegAmountValue, vegP));
     }
     if (dairyValue && dairyAmountValue > 0){
         const dairyP = (getPrice(dairyValue, dairyp)) * dairyAmountValue;
@@ -137,15 +139,14 @@ function fillTable(){
     vegetableAmount.value = "";
     dairy.value = "";
     dairyAmount.value = "";
+    skin.value = "";
+    skinAmount.value = "";
+    fruit.value = "";
+    fruitAmount.value = "";
     meat.value = "";
     meatAmount.value = "";
-    skinAmountValue.value = "";
-    fruitAmountValue.value = "";
-    bncAmountValue.value = "";
-    skin.value = "";
     bnc.value = "";
-    fruit.value = "";
-
+    bncAmount.value = "";
 }
 
 // Creating rows
@@ -167,3 +168,41 @@ function createRow(product, amount, price){
 }
 
 submitOrderBtn.addEventListener("click", fillTable);
+
+function getorderDetails() {
+    const orderDetails = [];
+    const rows = document.querySelectorAll("#order-table tr");
+
+    rows.forEach((row, index) => {
+
+        if(index === 0 || index === 1) return;
+
+        const cell = row.querySelectorAll("td");
+        const product = cell[0].textContent;
+        const amount = cell[1].textContent;
+        const price = cell[2].textContent;
+
+        orderDetails.push({product, amount, price})
+    });
+
+    localStorage.setItem("orderDetails", JSON.stringify(orderDetails));
+
+    window.location.href = "pay.html";
+}
+
+buynowBtn.addEventListener("click", getorderDetails)
+
+/*function setOrderDetails(orderDetails){
+    const orderDetailsContainer = document.getElementById("order_detais_container");
+    
+    orderDetails.forEach(details => {
+        const para = document.createElement("p");
+        para.textContent = `Product - ${product}, Amount - ${amount}, Price - ${price}`;
+        orderDetailsContainer.appendChild(para)
+    });
+
+    const totalPara = document.getElementById("totalP");
+    totalPara.textContent = `Total Price ${totalP}`;
+    orderDetailsContainer.appendChild(totalPara);
+
+}*/
