@@ -230,8 +230,8 @@
 /* Order page Products selections */
 .order-container{
     display: grid;
-    grid-template-columns: repeat(2, 30%);
-    grid-template-rows: repeat(3, 250px);
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 250px);
     align-items: center;
     justify-content: center;
 }
@@ -343,10 +343,20 @@
     padding: 10px;
 }
 /* Order Page Mobile view */
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1286px){
     .order-container{
-        grid-template-columns: repeat(1, 50%);
-        grid-template-rows: repeat(6, 270px);
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: repeat(3, 240px);
+        gap: 10px;
+    }   
+    .btn_container{
+        margin: 20px;
+    }
+}
+@media screen and (max-width: 1010px){
+    .order-container{
+        grid-template-columns: repeat(2, 40%);
+        grid-template-rows: repeat(3, 290px);
         gap: 30px;
     }   
     .btn_container{

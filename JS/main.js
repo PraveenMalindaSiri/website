@@ -23,6 +23,9 @@ const orederTable = document.getElementById("order-table");
 const buynowBtn = document.getElementById("buy_btn");
 const submitOrderBtn = document.getElementById("submit_btn");
 
+const favBtn = document.getElementById("favourite_btn");
+const addBtn = document.getElementById("apply_btn");
+
 
 // Creating products objects
 
@@ -169,7 +172,10 @@ function createRow(product, amount, price){
 
 submitOrderBtn.addEventListener("click", fillTable);
 
+// Get the order details from the filled table and use it to fill the pay page
 function getorderDetails() {
+    // event.preventDefault();
+    
     const orderDetails = [];
     const rows = document.querySelectorAll("#order-table tr");
 
@@ -189,9 +195,68 @@ function getorderDetails() {
     localStorage.setItem("TotalPrice", JSON.stringify(totalP));
 
     window.location.href = "pay.html";
+
 }
 
 buynowBtn.addEventListener("click", getorderDetails)
+
+// Get the order details from the filled table to save
+function favouriteCreate() {
+    const orderDetails2 = [];
+    const rows = document.querySelectorAll("#order-table tr");
+
+    rows.forEach((row, index) => {
+
+        if(index === 0 || index === 1) return;
+
+        const cell = row.querySelectorAll("td");
+        const product = cell[0].textContent;
+        const amount = cell[1].textContent;
+        const price = cell[2].textContent;
+
+        orderDetails2.push({product, amount, price})
+    });
+
+    localStorage.setItem("orderDetails_fav", JSON.stringify(orderDetails2));
+    localStorage.setItem("TotalPrice_fav", JSON.stringify(totalP));  
+}
+
+favBtn.addEventListener("click", favouriteCreate);
+
+// get the saved order details to fill the table
+function addFavourite() {
+    const orderDetailsFav = JSON.parse(localStorage.getItem("orderDetails_fav"));
+    const totalPriceFav = JSON.parse(localStorage.getItem("TotalPrice_fav"));
+
+    console.log(orderDetailsFav);
+    console.log(totalPriceFav);
+
+    // orderDetails.forEach(element => {
+        
+    // });
+
+}
+
+
+addBtn.addEventListener("click", addFavourite)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*function setOrderDetails(orderDetails){
     const orderDetailsContainer = document.getElementById("order_detais_container");

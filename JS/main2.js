@@ -8,7 +8,7 @@ function orderDetailsPay() {
     if(orderDetails && orderDetails.length > 0){
         orderDetails.forEach(element => {
             const para = document.createElement("p");
-            para.textContent = `Product - ${element.product}, Amount - ${element.amount}, Price - ${element.price}`;
+            para.textContent = `Product - ${element.product}, Amount - ${element.amount}, Price - Rs.${element.price}/=`;
             orderDetailsContainer.appendChild(para)
         });
     }
