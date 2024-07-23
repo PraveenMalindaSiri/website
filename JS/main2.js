@@ -55,7 +55,7 @@ function thank(event) {
     // console.log(OrderDate);
 
     let Ddate = new Date();
-    Ddate.setDate(date.getDate() + 7)
+    Ddate.setDate(date.getDate() + 2)
     let Dday = Ddate.getDate().toString().padStart(2, "0");
     let DYear = Ddate.getFullYear();
     let Dmonth = (Ddate.getMonth() + 1).toString().padStart(2, "0");
