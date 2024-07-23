@@ -13,7 +13,9 @@ function orderDetailsPay() {
         });
     }
     else{
-        orderDetailsContainer.textContent = `NO Order details.`
+        const para = document.createElement("p");
+        para.textContent = `NO Order details. Please select items.`;
+        orderDetailsContainer.appendChild(para);
     }
 
     totalPara.textContent = `Total Price Rs.${totalPrice}/=`;

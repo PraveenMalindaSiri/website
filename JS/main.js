@@ -218,7 +218,7 @@ function favouriteCreate() {
     });
 
     localStorage.setItem("orderDetails_fav", JSON.stringify(orderDetails2));
-    localStorage.setItem("TotalPrice_fav", JSON.stringify(totalP));  
+    localStorage.setItem("TotalPrice_fav", JSON.stringify(totalP));
 }
 
 favBtn.addEventListener("click", favouriteCreate);
