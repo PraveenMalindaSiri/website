@@ -228,14 +228,16 @@ function addFavourite() {
     const orderDetailsFav = JSON.parse(localStorage.getItem("orderDetails_fav"));
     const totalPriceFav = JSON.parse(localStorage.getItem("TotalPrice_fav"));
 
-    console.log(orderDetailsFav);
-    console.log(totalPriceFav);
+    totalP = totalPriceFav; // get the total price from the JSON and asign it to the totalP unless using favourite wont change the totalP
+
+    //console.log(orderDetailsFav);
+    //console.log(totalPriceFav);
 
     orderDetailsFav.forEach((detail) =>{
         orederTable.appendChild(createRow(detail.product, detail.amount, detail.price));
     });
 
-    tableOutput.textContent = totalPriceFav;
+    tableOutput.textContent = totalP;
 
 }
 
