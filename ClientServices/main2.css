@@ -397,6 +397,7 @@
     font-size: larger;
     outline: none;
     padding: 10px;
+    border: none;
 }
 #pay_btn{
     background-color: gray;
