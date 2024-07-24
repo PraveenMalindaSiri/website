@@ -231,9 +231,11 @@ function addFavourite() {
     console.log(orderDetailsFav);
     console.log(totalPriceFav);
 
-    // orderDetails.forEach(element => {
-        
-    // });
+    orderDetailsFav.forEach((detail) =>{
+        orederTable.appendChild(createRow(detail.product, detail.amount, detail.price));
+    });
+
+    tableOutput.textContent = totalPriceFav;
 
 }
 

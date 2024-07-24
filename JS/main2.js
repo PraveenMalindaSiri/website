@@ -9,7 +9,7 @@ function orderDetailsPay() {
         orderDetails.forEach(element => {
             const para = document.createElement("p");
             para.textContent = `Product - ${element.product}, Amount - ${element.amount}, Price - Rs.${element.price}/=`;
-            orderDetailsContainer.appendChild(para)
+            orderDetailsContainer.appendChild(para);
         });
     }
     else{
