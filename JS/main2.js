@@ -63,23 +63,24 @@ function thank(event) {
     let Dmonth = (Ddate.getMonth() + 1).toString().padStart(2, "0");
 
     let DeliverDate = `${DYear}-${Dmonth}-${Dday}`
-
-    if((!card || !cExDate || !cOwner || !secNum)){
-        tOutput.textContent = `Please fill the card detals fields`
+    if ((!card || !cExDate || !cOwner || !secNum) && (!mobile || !email || !name || !address)) {
+        tOutput.textContent = `Please fill all the fields`;
+    }
+    else if((!card || !cExDate || !cOwner || !secNum)){
+        tOutput.textContent = `Please fill the card detals fields`;
     }
     else if((!mobile || !email || !name || !address)){
-        tOutput.textContent = `Please fill the fields mobile number and email Customer name and the address.`
+        tOutput.textContent = `Please fill the fields mobile number and email Customer name and the address.`;
     }
     else if(!radioValue){
-        tOutput.textContent = `Please select a Payment Method`
+        tOutput.textContent = `Please select a Payment Method`;
     }
     else{
         tOutput.textContent = `Your Order Is done. Customer name ${name}, 
-        your address is "${address}". Payment method is
-        ${radioValue}.
+        your address is "${address}".
         Order Date:${OrderDate}.
         Delivery Date:${DeliverDate}. Thank you for your Order. 
-        (Expect additional information about your order soon.)`
+        (Expect additional information about your order soon.)`;
     }
 
 }
