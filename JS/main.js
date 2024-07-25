@@ -155,15 +155,15 @@ function fillTable(){
 // Creating rows
 function createRow(product, amount, price){
     const tr = document.createElement("tr");
-    const produceCell = document.createElement("td");
+    const productCell = document.createElement("td");
     const amountCell = document.createElement("td");
     const priceCell = document.createElement("td");
 
-    produceCell.textContent = product;
+    productCell.textContent = product;
     amountCell.textContent = amount;
     priceCell.textContent = price;
 
-    tr.appendChild(produceCell);
+    tr.appendChild(productCell);
     tr.appendChild(amountCell);
     tr.appendChild(priceCell);
 
