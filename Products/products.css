@@ -484,6 +484,34 @@ footer h3{
     color: blue;
 }
 /*meats, fruits and bac ing. pages mobile*/
+@media screen and (max-width:1100px) {
+    .container5{
+        grid-template-columns: repeat(4,auto);
+        grid-template-rows: repeat(3,300px);
+    }
+    .container3{
+        grid-template-columns: repeat(4,auto);
+        grid-template-rows: repeat(3,270px);
+    }
+    .container4{
+        grid-template-columns: repeat(4,auto);
+        grid-template-rows: repeat(3,250px)
+    }
+}
+@media screen and (max-width:850px) {
+    .container5{
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(4,300px);
+    }
+    .container3{
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(4,270px);
+    }
+    .container4{
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(4,250px)
+    }
+}
 @media screen and (max-width:500px) {
     .container5{
         grid-template-columns: repeat(1,auto);
