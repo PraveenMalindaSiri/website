@@ -65,15 +65,19 @@ function thank(event) {
     let DeliverDate = `${DYear}-${Dmonth}-${Dday}`
     if ((!card || !cExDate || !cOwner || !secNum) && (!mobile || !email || !name || !address)) {
         tOutput.textContent = `Please fill all the fields`;
+        window.alert("Please fill all the fields");
     }
     else if((!card || !cExDate || !cOwner || !secNum)){
         tOutput.textContent = `Please fill the card detals fields`;
+        window.alert("Please fill the card detals fields");
     }
     else if((!mobile || !email || !name || !address)){
         tOutput.textContent = `Please fill the fields mobile number and email Customer name and the address.`;
+        window.alert("Please fill the fields mobile number and email Customer name and the address");
     }
     else if(!radioValue){
         tOutput.textContent = `Please select a Payment Method`;
+        window.alert("Please select a Payment Method");
     }
     else{
         tOutput.textContent = `Your Order Is done. Customer name ${name}, 
