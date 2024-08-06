@@ -246,16 +246,16 @@ function addFavourite() {
 addBtn.addEventListener("click", addFavourite)
 
 
-
+// Clear order table
 function ClearTable() {
-    orederTable.innerHTML = `<tr>
-                            <th>Product</th>
-                            <th>Amout (Kg / Units)</th>
-                            <th>Price</th>
-                        </tr>`;
-    
-    totalP = 0;
-    tableOutput.textContent = `${totalP}`
+    const rows = orederTable.getElementsByTagName("tr");
+
+    for(let i = rows.length - 1; i > 1; i--)
+    {
+        orederTable.deleteRow(i);
+    }
+    // totalP = 0;
+    tableOutput.textContent = ``;
 }
 
 clearBtn.addEventListener("click", ClearTable);

@@ -335,6 +335,15 @@
     opacity: 0.9;
     box-shadow: 1px 1px 2px black;
 }
+/* Clear btn */
+#clear_btn{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
 /* button container */
 .btn_container{
     display: flex;
