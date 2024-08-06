@@ -25,6 +25,7 @@ const submitOrderBtn = document.getElementById("submit_btn");
 
 const favBtn = document.getElementById("favourite_btn");
 const addBtn = document.getElementById("apply_btn");
+const clearBtn = document.getElementById("clear_btn"); 
 
 
 // Creating products objects
@@ -246,8 +247,18 @@ addBtn.addEventListener("click", addFavourite)
 
 
 
+function ClearTable() {
+    orederTable.innerHTML = `<tr>
+                            <th>Product</th>
+                            <th>Amout (Kg / Units)</th>
+                            <th>Price</th>
+                        </tr>`;
+    
+    totalP = 0;
+    tableOutput.textContent = `${totalP}`
+}
 
-
+clearBtn.addEventListener("click", ClearTable);
 
 
 
