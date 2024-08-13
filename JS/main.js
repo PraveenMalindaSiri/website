@@ -135,6 +135,7 @@ function fillTable(){
         totalP += skinP
         orederTable.appendChild(createRow(skinValue, skinAmountValue, skinP));
     }
+    
 
     tableOutput.textContent = `${totalP}`;
 
@@ -265,6 +266,10 @@ clearBtn.addEventListener("click", ClearTable);
 
 
 
+
+// fetch("skinPro")
+//     .then(res => res.JSON())
+//     .then(data => fillTable(data))
 
 
 
